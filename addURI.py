@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
-import requests
 import sys
+import logging
+import datetime
+import requests
 from lxml import etree
 
 def get_keyword_list(record):
@@ -51,39 +53,40 @@ class uri_lookup:
 
     #TGM
     def tgm(keyword):   
-        keyword = keyword.replace(' ','%20')
         try:
-            tgm_lookup = requests.get('http://id.loc.gov/vocabulary/graphicMaterials/label/{0}'.format(keyword),
+            tgm_lookup = requests.get('http://id.loc.gov/vocabulary/graphicMaterials/label/{0}'.format(keyword.replace(' ','%20')),
                                         timeout=5)
             if tgm_lookup.status_code == 200:
                 print(tgm_lookup.url[0:-5])
             elif tgm_lookup.status_code == 404:
-                print('404: resource not found')
+                logging.warning('404 - resource not found ; {0}'.format('tgm:' + keyword))
             elif tgm_lookup.status_code == 503:
-                print(tgm_lookup.headers)
+                logging.info('503 - {0} ; {1}'.format(tgm_lookup.headers, 'tgm:' + keyword))
             else:
-                print(tgm_lookup.status_code)
+                logging.warning('Other status code - {0} ; {1}'.format(tgm_lookup.status_code, 'tgm:' + keyword))
         except requests.exceptions.Timeout:
-            print('The request timed out after five seconds.')
+            logging.warning('The request timed out after five seconds. {0}'.format('tgm:' + keyword))
 
    #LCSH
     def lcsh(keyword):
-        keyword = keyword.replace(' ','%20')
         try: 
-            lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword),
+            lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword.replace(' ','%20')),
                                     timeout=5)
             if lcsh_lookup.status_code == 200:
                 print(lcsh_lookup.url[0:-5])
             elif lcsh_lookup.status_code == 404:
-                print('404: resource not found')
+                logging.warning('404 - resource not found ; {0}'.format('lcsh:' + keyword))
             elif lcsh_lookup.status_code == 503:
-                print(lcsh_lookup.headers)
+                logging.info('503 - {0} ; {1}'.format(tgm_lookup.headers, 'lcsh:' + keyword))
             else:
-                print(lcsh_lookup.status_code) 
+                logging.warning('Other status code - {0} ; {1}'.format(tgm_lookup.status_code, 'lcsh:' + keyword))
         except requests.exceptions.Timeout:
-            print('The request timed out after five seconds.')
+            logging.warning('The request timed out after five seconds. {0}'.format('lcsh:' + keyword))
           
 modsXML = etree.parse(sys.argv[1])
 modsRecord = modsXML.getroot()
+logging.basicConfig(filename='addURI_LOG.txt', level=logging.WARNING,
+                    format='%(asctime)s -- %(levelname)s : %(message)s',
+                    datefmt='%m/%d/%Y %H:%M:%S %p')
 for keyword in get_keyword_list(modsRecord):
     uri_lookup.lcsh(keyword)

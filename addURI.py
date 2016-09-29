@@ -85,7 +85,8 @@ class uri_lookup:
           
 modsXML = etree.parse(sys.argv[1])
 modsRecord = modsXML.getroot()
-logging.basicConfig(filename='addURI_LOG.txt', level=logging.WARNING,
+logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
+                    level=logging.WARNING,
                     format='%(asctime)s -- %(levelname)s : %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S %p')
 for keyword in get_keyword_list(modsRecord):

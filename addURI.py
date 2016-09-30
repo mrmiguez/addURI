@@ -23,12 +23,15 @@ class mods:
 
 
     def load(input_file, nameSpace_dict=nameSpace_default):
-        record_list = []
         tree = etree.parse(input_file)
         root = tree.getroot()
-        for record in root.iterfind('.//{%s}mods' % nameSpace_dict['mods']):
-            record_list.append(record)
-        return record_list
+        if len(root.findall('.//{%s}mods' % nameSpace_dict['mods'])) > 1:
+            record_list = []
+            for record in root.iterfind('.//{%s}mods' % nameSpace_dict['mods']):
+                record_list.append(record)
+            return record_list
+        else:
+            return root
         
     
     def note(record, nameSpace_dict=nameSpace_default):
@@ -83,11 +86,13 @@ class uri_lookup:
         except requests.exceptions.Timeout:
             logging.warning('The request timed out after five seconds. {0}'.format('lcsh:' + keyword))
           
-modsXML = etree.parse(sys.argv[1])
-modsRecord = modsXML.getroot()
+#modsXML = etree.parse(sys.argv[1])
+#modsRecord = modsXML.getroot()
 logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
                     level=logging.WARNING,
                     format='%(asctime)s -- %(levelname)s : %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S %p')
-for keyword in get_keyword_list(modsRecord):
-    uri_lookup.lcsh(keyword)
+record = mods.load(sys.argv[1])
+print(record.attrib)
+#for keyword in get_keyword_list(mods.load(sys.argv[1])):
+#	uri_lookup.lcsh(keyword)

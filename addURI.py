@@ -92,7 +92,7 @@ logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
                     level=logging.WARNING,
                     format='%(asctime)s -- %(levelname)s : %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S %p')
-record = mods.load(sys.argv[1])
-print(record.attrib)
-#for keyword in get_keyword_list(mods.load(sys.argv[1])):
-#	uri_lookup.lcsh(keyword)
+#record = mods.load(sys.argv[1])
+#print(record.attrib)
+for keyword in get_keyword_list(mods.load(sys.argv[1])):
+	uri_lookup.lcsh(keyword)

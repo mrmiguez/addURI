@@ -16,6 +16,22 @@ nameSpace_default = {'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/',
 LOC_try_index = 0                     
 error_log = False
 
+def write_record_subjects(record, subjects, PID):
+    with open('improvedMODS/' + PID.replace(':','_') + '.xml', 'w') as MODS_out:
+        for appending_subject in subjects:
+            if 'tgm' in appending_subject.keys():
+                subject = etree.Element('{%s}subject' % nameSpace_default['mods'],
+                                        authority='tgm', authorityURI='http://id.loc.gov/vocabulary/graphicMaterials')
+                topic = etree.SubElement(subject)
+                topic.text = appending_subject['tgm']
+            elif 'lcsh' in appending_subject.keys():
+                subject = etree.Element('{%s}subject' % nameSpace_default['mods'],
+                                        authority='lcsh', authorityURI='http://id.loc.gov/authorities/subjects')
+                subject.text = appending_subject['lcsh']
+            record.append(subject)
+        MODS_out.write(etree.tostring(record, pretty_print=True, xml_declaration=True, encoding="UTF-8").decode('utf-8'))
+
+
 def get_keyword_list(record):
     keywords = []
     for note in mods.note(record):
@@ -23,6 +39,7 @@ def get_keyword_list(record):
             for keyword in note['Keywords'].split(','):
                 keywords.append(keyword.strip())
     return keywords
+
 
 class oai_dc:
 
@@ -85,6 +102,8 @@ class uri_lookup:
 
     #TGM
     def tgm(keyword, record_PID):
+        pass
+    '''
         global LOC_try_index
         global error_log
         tgm_lookup = requests.get('http://id.loc.gov/vocabulary/graphicMaterials/label/{0}'.format(keyword.replace(' ','%20')),
@@ -104,9 +123,11 @@ class uri_lookup:
             logging.warning('Other status code - {0} ; [{1}]--{2}'.format(tgm_lookup.status_code, record_PID, 'tgm:' + keyword))
             error_log = True
             return None
-
+    '''
    #LCSH
     def lcsh(keyword, record_PID):
+        pass
+    '''    
         global LOC_try_index
         global error_log
         lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword.replace(' ','%20')),
@@ -126,15 +147,15 @@ class uri_lookup:
             logging.warning('Other status code - {0} ; [{1}]--{2}'.format(tgm_lookup.status_code, record_PID, 'lcsh:' + keyword))
             error_log = True
             return None
-
+    '''
 
 logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
                     level=logging.WARNING,
                     format='%(asctime)s -- %(levelname)s : %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S %p')
 for record in mods.load(sys.argv[1]):
-    record_write = False
-    appending_subjects = []
+    record_write = True
+    appending_subjects = [{'tgm':'Frankenstein'},{'lcsh':'His wife'}]
     while LOC_try_index <= 5:
         record_PID = mods.pid_search(record)
         print("Checking:", record_PID)
@@ -156,7 +177,10 @@ for record in mods.load(sys.argv[1]):
         print("\nid.loc.gov seems unavailable at this time. Try again later.\n")
         break
     if record_write == True:
+        if 'improvedMODS' not in os.listdir():
+            os.mkdir('improvedMODS')
         print("Writing", record_PID)
+        write_record_subjects(record, appending_subjects, record_PID)
 if error_log is True:
     print("\nSome keywords not found.\nDetails logged to: addURI_LOG{0}.txt\n".format(datetime.date.today()))
 

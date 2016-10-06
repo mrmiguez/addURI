@@ -1,0 +1,89 @@
+10/06/2016 19:28:56 PM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:Greek Life
+10/06/2016 19:30:43 PM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:Greek Life
+10/06/2016 19:30:43 PM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:sorority life
+10/06/2016 19:32:18 PM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:Greek Life
+10/06/2016 19:32:19 PM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:sorority life
+10/06/2016 19:32:50 PM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:Greek Life
+10/06/2016 19:32:51 PM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:sorority life
+10/06/2016 19:33:34 PM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:Greek Life
+10/06/2016 19:33:35 PM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:sorority life
+10/06/2016 19:33:35 PM -- WARNING : 404 - resource not found ; [fsu:209908]--tgm:bioethics
+10/06/2016 19:33:36 PM -- WARNING : 404 - resource not found ; [fsu:209908]--tgm:cognitive enhancement
+10/06/2016 19:33:36 PM -- WARNING : 404 - resource not found ; [fsu:209908]--tgm:cognitive enhancers
+10/06/2016 19:33:36 PM -- WARNING : 404 - resource not found ; [fsu:209904]--tgm:Birth
+10/06/2016 19:33:36 PM -- WARNING : 404 - resource not found ; [fsu:209904]--tgm:C-Section
+10/06/2016 19:33:37 PM -- WARNING : 404 - resource not found ; [fsu:209904]--tgm:VBAC
+10/06/2016 19:33:37 PM -- WARNING : 404 - resource not found ; [fsu:209904]--tgm:Obstetrics
+10/06/2016 19:33:37 PM -- WARNING : 404 - resource not found ; [fsu:209911]--tgm:vegan
+10/06/2016 19:33:37 PM -- WARNING : 404 - resource not found ; [fsu:209911]--tgm:vegetarian
+10/06/2016 19:33:37 PM -- WARNING : 404 - resource not found ; [fsu:209911]--tgm:animal rights
+10/06/2016 19:33:38 PM -- WARNING : 404 - resource not found ; [fsu:209911]--tgm:environment
+10/06/2016 19:33:38 PM -- WARNING : 404 - resource not found ; [fsu:209911]--tgm:accessibility
+10/06/2016 19:33:38 PM -- WARNING : 404 - resource not found ; [fsu:209906]--tgm:euthanasia
+10/06/2016 19:33:38 PM -- WARNING : 404 - resource not found ; [fsu:209906]--tgm:physician-assisted suicide
+10/06/2016 19:33:39 PM -- WARNING : 404 - resource not found ; [fsu:209906]--tgm:ethic
+10/06/2016 19:33:39 PM -- WARNING : 404 - resource not found ; [fsu:209906]--tgm:bioethics
+10/06/2016 19:33:39 PM -- WARNING : 404 - resource not found ; [fsu:209913]--tgm:categorical imperative
+10/06/2016 19:33:39 PM -- WARNING : 404 - resource not found ; [fsu:209913]--tgm:Greek Life
+10/06/2016 19:33:39 PM -- WARNING : 404 - resource not found ; [fsu:209913]--tgm:drug use
+10/06/2016 19:33:39 PM -- WARNING : 404 - resource not found ; [fsu:209913]--tgm:Kant
+10/06/2016 19:33:39 PM -- WARNING : 404 - resource not found ; [fsu:209913]--tgm:collegiate society
+10/06/2016 19:33:39 PM -- WARNING : 404 - resource not found ; [fsu:209915]--tgm:conscientious objection
+10/06/2016 19:33:40 PM -- WARNING : 404 - resource not found ; [fsu:209915]--tgm:abortion
+10/06/2016 19:33:40 PM -- WARNING : 404 - resource not found ; [fsu:209915]--tgm:Hippocratic oath
+10/06/2016 19:33:40 PM -- WARNING : 404 - resource not found ; [fsu:209918]--tgm:life in prison
+10/06/2016 19:33:40 PM -- WARNING : 404 - resource not found ; [fsu:209918]--tgm:human adaption
+10/06/2016 19:33:40 PM -- WARNING : 404 - resource not found ; [fsu:209918]--tgm:set point theory
+10/06/2016 19:33:40 PM -- WARNING : 404 - resource not found ; [fsu:209919]--tgm:Cyberbullying
+10/06/2016 19:33:41 PM -- WARNING : 404 - resource not found ; [fsu:209919]--tgm:School
+10/06/2016 19:33:41 PM -- WARNING : 404 - resource not found ; [fsu:209919]--tgm:Internet Safety
+10/06/2016 19:33:41 PM -- WARNING : 404 - resource not found ; [fsu:209919]--tgm:Online
+10/06/2016 19:33:43 PM -- WARNING : 404 - resource not found ; [fsu:209907]--tgm:HIV
+10/06/2016 19:33:43 PM -- WARNING : 404 - resource not found ; [fsu:209907]--tgm:and Bioethics
+10/06/2016 19:33:43 PM -- WARNING : 404 - resource not found ; [fsu:209912]--tgm:bioethics
+10/06/2016 19:33:44 PM -- WARNING : 404 - resource not found ; [fsu:209912]--tgm:genetics
+10/06/2016 19:33:44 PM -- WARNING : 404 - resource not found ; [fsu:209912]--tgm:eugenics
+10/06/2016 19:33:44 PM -- WARNING : 404 - resource not found ; [fsu:209912]--tgm:genetic modification
+10/06/2016 19:33:44 PM -- WARNING : 404 - resource not found ; [fsu:209912]--tgm:designer babies
+10/06/2016 19:33:45 PM -- WARNING : 404 - resource not found ; [fsu:209920]--tgm:custody
+10/06/2016 19:33:45 PM -- WARNING : 404 - resource not found ; [fsu:209920]--tgm:parental rights
+10/06/2016 19:33:46 PM -- WARNING : 404 - resource not found ; [fsu:209916]--tgm:life support
+10/06/2016 19:33:46 PM -- WARNING : 404 - resource not found ; [fsu:209916]--tgm:cease
+10/06/2016 19:33:46 PM -- WARNING : 404 - resource not found ; [fsu:209916]--tgm:persistent vegetative state
+10/06/2016 19:33:46 PM -- WARNING : 404 - resource not found ; [fsu:209916]--tgm:morally permissible
+10/06/2016 19:33:46 PM -- WARNING : 404 - resource not found ; [fsu:209916]--tgm:right to die
+10/06/2016 19:33:46 PM -- WARNING : 404 - resource not found ; [fsu:209916]--tgm:sanctity of life
+10/06/2016 19:33:47 PM -- WARNING : 404 - resource not found ; [fsu:209905]--tgm:organ allocation
+10/06/2016 19:33:47 PM -- WARNING : 404 - resource not found ; [fsu:209905]--tgm:consequentialist
+10/06/2016 19:33:47 PM -- WARNING : 404 - resource not found ; [fsu:209909]--tgm:euthanasia
+10/06/2016 19:33:47 PM -- WARNING : 404 - resource not found ; [fsu:209909]--tgm:ALS
+10/06/2016 19:33:47 PM -- WARNING : 404 - resource not found ; [fsu:209909]--tgm:morally
+10/06/2016 19:33:48 PM -- WARNING : 404 - resource not found ; [fsu:209909]--tgm:assisted suicide
+10/06/2016 19:33:48 PM -- WARNING : 404 - resource not found ; [fsu:209914]--tgm:Overprotective parenting ethics
+10/06/2016 19:33:48 PM -- WARNING : 404 - resource not found ; [fsu:209914]--tgm:child development
+10/06/2016 19:33:48 PM -- WARNING : 404 - resource not found ; [fsu:209914]--tgm:psychological
+10/06/2016 19:33:49 PM -- WARNING : 404 - resource not found ; [fsu:209917]--tgm:Decisions
+10/06/2016 19:33:51 PM -- WARNING : 404 - resource not found ; [fsu:209897]--tgm:cognitive enhancers/enhancement
+10/06/2016 19:33:51 PM -- WARNING : 404 - resource not found ; [fsu:209897]--tgm:pharmaceuticals
+10/06/2016 19:33:51 PM -- WARNING : 404 - resource not found ; [fsu:209898]--tgm:abortion
+10/06/2016 19:33:51 PM -- WARNING : 404 - resource not found ; [fsu:209898]--tgm:stem cell research
+10/06/2016 19:33:52 PM -- WARNING : 404 - resource not found ; [fsu:209898]--tgm:embryonic
+10/06/2016 19:33:52 PM -- WARNING : 404 - resource not found ; [fsu:209903]--tgm:Abortion
+10/06/2016 19:33:52 PM -- WARNING : 404 - resource not found ; [fsu:209903]--tgm:Pro-Life
+10/06/2016 19:33:52 PM -- WARNING : 404 - resource not found ; [fsu:209903]--tgm:Pro-Choice
+10/06/2016 19:33:52 PM -- WARNING : 404 - resource not found ; [fsu:209903]--tgm:Thomson
+10/06/2016 19:33:52 PM -- WARNING : 404 - resource not found ; [fsu:209903]--tgm:Violinist
+10/06/2016 19:33:52 PM -- WARNING : 404 - resource not found ; [fsu:209899]--tgm:Stem Cell Research
+10/06/2016 19:33:52 PM -- WARNING : 404 - resource not found ; [fsu:209899]--tgm:Induced Pluripotent Stem Cells
+10/06/2016 19:33:52 PM -- WARNING : 404 - resource not found ; [fsu:209899]--tgm:Embryonic Stem Cells
+10/06/2016 19:33:52 PM -- WARNING : 404 - resource not found ; [fsu:209901]--tgm:crime
+10/06/2016 19:33:53 PM -- WARNING : 404 - resource not found ; [fsu:209901]--tgm:criminal
+10/06/2016 19:33:54 PM -- WARNING : 404 - resource not found ; [fsu:209901]--tgm:publishing
+10/06/2016 19:33:55 PM -- WARNING : 404 - resource not found ; [fsu:209900]--tgm:Organ donation
+10/06/2016 19:33:55 PM -- WARNING : 404 - resource not found ; [fsu:209900]--tgm:HIV
+10/06/2016 19:33:55 PM -- WARNING : 404 - resource not found ; [fsu:209900]--tgm:National Organ Transplant Act of 1984 (NOTA)
+10/06/2016 19:33:55 PM -- WARNING : 404 - resource not found ; [fsu:209902]--tgm:animal equality
+10/06/2016 19:33:55 PM -- WARNING : 404 - resource not found ; [fsu:209902]--tgm:human animals
+10/06/2016 19:33:55 PM -- WARNING : 404 - resource not found ; [fsu:209902]--tgm:rights
+10/06/2016 19:33:55 PM -- WARNING : 404 - resource not found ; [fsu:209902]--tgm:community
+10/06/2016 19:33:55 PM -- WARNING : 404 - resource not found ; [fsu:209902]--tgm:personhood

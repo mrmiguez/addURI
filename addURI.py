@@ -12,6 +12,7 @@ nameSpace_default = {'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/',
                      'mods': 'http://www.loc.gov/mods/v3', 
                      'dcterms': 'http://purl.org/dc/terms'}
 LOC_try_index = 0                     
+error_log = False
 
 def get_keyword_list(record):
     keywords = []
@@ -83,33 +84,43 @@ class uri_lookup:
     #TGM
     def tgm(keyword):   
         tgm_lookup = requests.get('http://id.loc.gov/vocabulary/graphicMaterials/label/{0}'.format(keyword.replace(' ','%20')),
-                                    timeout=5)
+                                   timeout=5)
         if tgm_lookup.status_code == 200:
+            LOC_try_index = 0
             return tgm_lookup.url[0:-5]
         elif tgm_lookup.status_code == 404:
             logging.warning('404 - resource not found ; {0}'.format('tgm:' + keyword))
+            error_log = True
+            return None
         elif tgm_lookup.status_code == 503:
             logging.info('503 - {0} ; {1}'.format(tgm_lookup.headers, 'tgm:' + keyword))
+            error_log = True
+            return None
         else:
             logging.warning('Other status code - {0} ; {1}'.format(tgm_lookup.status_code, 'tgm:' + keyword))
+            error_log = True
+            return None
 
    #LCSH
     def lcsh(keyword):
-        try: 
-            lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword.replace(' ','%20')),
+        lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword.replace(' ','%20')),
                                     timeout=5)
-            if lcsh_lookup.status_code == 200:
-                print(lcsh_lookup.url[0:-5])
-            elif lcsh_lookup.status_code == 404:
-                logging.warning('404 - resource not found ; {0}'.format('lcsh:' + keyword))
-            elif lcsh_lookup.status_code == 503:
-                logging.info('503 - {0} ; {1}'.format(tgm_lookup.headers, 'lcsh:' + keyword))
-            else:
-                logging.warning('Other status code - {0} ; {1}'.format(tgm_lookup.status_code, 'lcsh:' + keyword))
-        except requests.exceptions.Timeout:
-            logging.warning('The request timed out after five seconds. {0}'.format('lcsh:' + keyword))
-            LOC_try_index = LOC_try_index + 1
-          
+        if lcsh_lookup.status_code == 200:
+            LOC_try_index = 0
+            return lcsh_lookup.url[0:-5]
+        elif lcsh_lookup.status_code == 404:
+            logging.warning('404 - resource not found ; {0}'.format('lcsh:' + keyword))
+            error_log = True
+            return None
+        elif lcsh_lookup.status_code == 503:
+            logging.info('503 - {0} ; {1}'.format(tgm_lookup.headers, 'lcsh:' + keyword))
+            error_log = True
+            return None
+        else:
+            logging.warning('Other status code - {0} ; {1}'.format(tgm_lookup.status_code, 'lcsh:' + keyword))
+            error_log = True
+            return None
+
 
 logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
                     level=logging.WARNING,
@@ -121,7 +132,12 @@ for record in mods.load(sys.argv[1]):
         print(record_PID)
         for keyword in get_keyword_list(record):
             try:
-                print(keyword, "-", uri_lookup.tgm(keyword))
+                if uri_lookup.tgm(keyword) is not None:
+                    print(keyword, '- tgm:' + uri_lookup.tgm(keyword))
+                elif uri_lookup.lcsh(keyword) is not None:
+                    print(keyword, '- lcsh:' + uri_lookup.lcsh(keyword))
+                else:
+                    print('None')
             except requests.exceptions.Timeout:
                 logging.warning("The request timed out after five seconds. {0}".format(keyword))
                 LOC_try_index = LOC_try_index + 1
@@ -129,4 +145,6 @@ for record in mods.load(sys.argv[1]):
     else:
         print("\nid.loc.gov seems unavailable at this time. Try again later.\n")
         break
+if error_log is True:
+    print("\nErrors logged to: addURI_LOG{0}.txt\n".format(datetime.date.today()))
 

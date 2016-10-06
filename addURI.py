@@ -81,8 +81,11 @@ class mods:
 
 class uri_lookup:
 
+
     #TGM
-    def tgm(keyword):   
+    def tgm(keyword):
+        global LOC_try_index
+        global error_log
         tgm_lookup = requests.get('http://id.loc.gov/vocabulary/graphicMaterials/label/{0}'.format(keyword.replace(' ','%20')),
                                    timeout=5)
         if tgm_lookup.status_code == 200:
@@ -103,6 +106,8 @@ class uri_lookup:
 
    #LCSH
     def lcsh(keyword):
+        global LOC_try_index
+        global error_log
         lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword.replace(' ','%20')),
                                     timeout=5)
         if lcsh_lookup.status_code == 200:
@@ -129,7 +134,7 @@ logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
 for record in mods.load(sys.argv[1]):
     while LOC_try_index <= 5:
         record_PID = mods.pid_search(record)
-        print(record_PID)
+        print("Checking:", record_PID)
         for keyword in get_keyword_list(record):
             try:
                 if uri_lookup.tgm(keyword) is not None:
@@ -146,5 +151,5 @@ for record in mods.load(sys.argv[1]):
         print("\nid.loc.gov seems unavailable at this time. Try again later.\n")
         break
 if error_log is True:
-    print("\nErrors logged to: addURI_LOG{0}.txt\n".format(datetime.date.today()))
+    print("\nSome keywords not found.\nDetails logged to: addURI_LOG{0}.txt\n".format(datetime.date.today()))
 

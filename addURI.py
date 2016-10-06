@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
+import os
 import re
 import sys
 import logging
 import datetime
 import requests
 from lxml import etree
+
 
 nameSpace_default = {'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/', 
                      'dc': 'http://purl.org/dc/elements/1.1/', 
@@ -81,31 +83,30 @@ class mods:
 
 class uri_lookup:
 
-
     #TGM
-    def tgm(keyword):
+    def tgm(keyword, record_PID):
         global LOC_try_index
         global error_log
         tgm_lookup = requests.get('http://id.loc.gov/vocabulary/graphicMaterials/label/{0}'.format(keyword.replace(' ','%20')),
                                    timeout=5)
         if tgm_lookup.status_code == 200:
             LOC_try_index = 0
-            return tgm_lookup.url[0:-5]
+            return tgm_lookup
         elif tgm_lookup.status_code == 404:
-            logging.warning('404 - resource not found ; {0}'.format('tgm:' + keyword))
+            logging.warning('404 - resource not found ; [{0}]--{1}'.format(record_PID, 'tgm:' + keyword))
             error_log = True
             return None
         elif tgm_lookup.status_code == 503:
-            logging.info('503 - {0} ; {1}'.format(tgm_lookup.headers, 'tgm:' + keyword))
+            logging.info('503 - {0} ; [{1}]--{2}'.format(tgm_lookup.headers, record_PID, 'tgm:' + keyword))
             error_log = True
             return None
         else:
-            logging.warning('Other status code - {0} ; {1}'.format(tgm_lookup.status_code, 'tgm:' + keyword))
+            logging.warning('Other status code - {0} ; [{1}]--{2}'.format(tgm_lookup.status_code, record_PID, 'tgm:' + keyword))
             error_log = True
             return None
 
    #LCSH
-    def lcsh(keyword):
+    def lcsh(keyword, record_PID):
         global LOC_try_index
         global error_log
         lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword.replace(' ','%20')),
@@ -114,15 +115,15 @@ class uri_lookup:
             LOC_try_index = 0
             return lcsh_lookup.url[0:-5]
         elif lcsh_lookup.status_code == 404:
-            logging.warning('404 - resource not found ; {0}'.format('lcsh:' + keyword))
+            logging.warning('404 - resource not found ; [{0}]--{1}'.format(record_PID, 'lcsh:' + keyword))
             error_log = True
             return None
         elif lcsh_lookup.status_code == 503:
-            logging.info('503 - {0} ; {1}'.format(tgm_lookup.headers, 'lcsh:' + keyword))
+            logging.info('503 - {0} ; [{1}]--{2}'.format(tgm_lookup.headers, record_PID, 'lcsh:' + keyword))
             error_log = True
             return None
         else:
-            logging.warning('Other status code - {0} ; {1}'.format(tgm_lookup.status_code, 'lcsh:' + keyword))
+            logging.warning('Other status code - {0} ; [{1}]--{2}'.format(tgm_lookup.status_code, record_PID, 'lcsh:' + keyword))
             error_log = True
             return None
 
@@ -132,24 +133,30 @@ logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
                     format='%(asctime)s -- %(levelname)s : %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S %p')
 for record in mods.load(sys.argv[1]):
+    record_write = False
+    appending_subjects = []
     while LOC_try_index <= 5:
         record_PID = mods.pid_search(record)
         print("Checking:", record_PID)
         for keyword in get_keyword_list(record):
             try:
-                if uri_lookup.tgm(keyword) is not None:
-                    print(keyword, '- tgm:' + uri_lookup.tgm(keyword))
-                elif uri_lookup.lcsh(keyword) is not None:
-                    print(keyword, '- lcsh:' + uri_lookup.lcsh(keyword))
+                if uri_lookup.tgm(keyword, record_PID) is not None:
+                    appending_subjects.append({'tgm': uri_lookup.tgm(keyword, record_PID)})
+                    record_write = True
+                elif uri_lookup.lcsh(keyword, record_PID) is not None:
+                    appending_subjects.append({'lcsh': uri_lookup.lcsh(keyword, record_PID)})
+                    record_write = True
                 else:
-                    print('None')
+                    pass
             except requests.exceptions.Timeout:
-                logging.warning("The request timed out after five seconds. {0}".format(keyword))
+                logging.warning("The request timed out after five seconds. {0}-{1}".format(record_PID, keyword))
                 LOC_try_index = LOC_try_index + 1
         break                
     else:
         print("\nid.loc.gov seems unavailable at this time. Try again later.\n")
         break
+    if record_write == True:
+        print("Writing", record_PID)
 if error_log is True:
     print("\nSome keywords not found.\nDetails logged to: addURI_LOG{0}.txt\n".format(datetime.date.today()))
 

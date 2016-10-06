@@ -82,20 +82,16 @@ class uri_lookup:
 
     #TGM
     def tgm(keyword):   
-        try:
-            tgm_lookup = requests.get('http://id.loc.gov/vocabulary/graphicMaterials/label/{0}'.format(keyword.replace(' ','%20')),
-                                        timeout=5)
-            if tgm_lookup.status_code == 200:
-                return tgm_lookup.url[0:-5]
-            elif tgm_lookup.status_code == 404:
-                logging.warning('404 - resource not found ; {0}'.format('tgm:' + keyword))
-            elif tgm_lookup.status_code == 503:
-                logging.info('503 - {0} ; {1}'.format(tgm_lookup.headers, 'tgm:' + keyword))
-            else:
-                logging.warning('Other status code - {0} ; {1}'.format(tgm_lookup.status_code, 'tgm:' + keyword))
-        except requests.exceptions.Timeout:
-            logging.warning('The request timed out after five seconds. {0}'.format('tgm:' + keyword))
-            LOC_try_index = LOC_try_index + 1
+        tgm_lookup = requests.get('http://id.loc.gov/vocabulary/graphicMaterials/label/{0}'.format(keyword.replace(' ','%20')),
+                                    timeout=5)
+        if tgm_lookup.status_code == 200:
+            return tgm_lookup.url[0:-5]
+        elif tgm_lookup.status_code == 404:
+            logging.warning('404 - resource not found ; {0}'.format('tgm:' + keyword))
+        elif tgm_lookup.status_code == 503:
+            logging.info('503 - {0} ; {1}'.format(tgm_lookup.headers, 'tgm:' + keyword))
+        else:
+            logging.warning('Other status code - {0} ; {1}'.format(tgm_lookup.status_code, 'tgm:' + keyword))
 
    #LCSH
     def lcsh(keyword):
@@ -119,12 +115,18 @@ logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
                     level=logging.WARNING,
                     format='%(asctime)s -- %(levelname)s : %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S %p')
-while LOC_try_index <= 5:
-    for record in mods.load(sys.argv[1]):
+for record in mods.load(sys.argv[1]):
+    while LOC_try_index <= 5:
         record_PID = mods.pid_search(record)
         print(record_PID)
         for keyword in get_keyword_list(record):
             try:
                 print(keyword, "-", uri_lookup.tgm(keyword))
-else:
-    print("\nid.loc.gov seems unavailable at this time. Try again later.")
+            except requests.exceptions.Timeout:
+                logging.warning("The request timed out after five seconds. {0}".format(keyword))
+                LOC_try_index = LOC_try_index + 1
+        break                
+    else:
+        print("\nid.loc.gov seems unavailable at this time. Try again later.\n")
+        break
+

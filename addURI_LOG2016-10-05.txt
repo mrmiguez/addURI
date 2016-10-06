@@ -1,0 +1,170 @@
+10/05/2016 14:34:57 PM -- WARNING : The request timed out after five seconds. lcsh:Communism
+10/05/2016 14:34:57 PM -- WARNING : 404 - resource not found ; lcsh:Russia
+10/05/2016 14:35:05 PM -- WARNING : 404 - resource not found ; lcsh:Red Scare
+10/05/2016 14:35:05 PM -- WARNING : 404 - resource not found ; lcsh:McCarthy
+10/05/2016 14:40:03 PM -- WARNING : 404 - resource not found ; tgm:Greek Life
+10/05/2016 14:40:10 PM -- WARNING : 404 - resource not found ; tgm:sorority life
+10/05/2016 14:40:12 PM -- WARNING : 404 - resource not found ; tgm:bioethics
+10/05/2016 14:40:20 PM -- WARNING : The request timed out after five seconds. tgm:ethics
+10/05/2016 14:40:21 PM -- WARNING : 404 - resource not found ; tgm:cognitive enhancement
+10/05/2016 14:40:23 PM -- WARNING : 404 - resource not found ; tgm:cognitive enhancers
+10/05/2016 14:40:27 PM -- WARNING : 404 - resource not found ; tgm:Birth
+10/05/2016 14:40:29 PM -- WARNING : 404 - resource not found ; tgm:C-Section
+10/05/2016 14:40:30 PM -- WARNING : 404 - resource not found ; tgm:VBAC
+10/05/2016 14:40:31 PM -- WARNING : 404 - resource not found ; tgm:Obstetrics
+10/05/2016 14:40:33 PM -- WARNING : 404 - resource not found ; tgm:vegan
+10/05/2016 14:40:34 PM -- WARNING : 404 - resource not found ; tgm:vegetarian
+10/05/2016 14:40:39 PM -- WARNING : 404 - resource not found ; tgm:animal rights
+10/05/2016 14:40:41 PM -- WARNING : 404 - resource not found ; tgm:environment
+10/05/2016 14:40:48 PM -- WARNING : The request timed out after five seconds. tgm:health
+10/05/2016 14:40:50 PM -- WARNING : 404 - resource not found ; tgm:accessibility
+10/05/2016 14:40:52 PM -- WARNING : 404 - resource not found ; tgm:euthanasia
+10/05/2016 14:40:53 PM -- WARNING : 404 - resource not found ; tgm:physician-assisted suicide
+10/05/2016 14:40:55 PM -- WARNING : 404 - resource not found ; tgm:ethic
+10/05/2016 14:40:55 PM -- WARNING : 404 - resource not found ; tgm:bioethics
+10/05/2016 14:40:57 PM -- WARNING : 404 - resource not found ; tgm:categorical imperative
+10/05/2016 14:40:57 PM -- WARNING : 404 - resource not found ; tgm:Greek Life
+10/05/2016 14:40:58 PM -- WARNING : 404 - resource not found ; tgm:drug use
+10/05/2016 14:41:00 PM -- WARNING : 404 - resource not found ; tgm:Kant
+10/05/2016 14:41:01 PM -- WARNING : 404 - resource not found ; tgm:collegiate society
+10/05/2016 14:41:03 PM -- WARNING : 404 - resource not found ; tgm:conscientious objection
+10/05/2016 14:41:04 PM -- WARNING : 404 - resource not found ; tgm:abortion
+10/05/2016 14:41:06 PM -- WARNING : 404 - resource not found ; tgm:Hippocratic oath
+10/05/2016 14:41:08 PM -- WARNING : 404 - resource not found ; tgm:life in prison
+10/05/2016 14:41:08 PM -- WARNING : 404 - resource not found ; tgm:human adaption
+10/05/2016 14:41:08 PM -- WARNING : 404 - resource not found ; tgm:set point theory
+10/05/2016 14:41:09 PM -- WARNING : 404 - resource not found ; tgm:Cyberbullying
+10/05/2016 14:41:09 PM -- WARNING : 404 - resource not found ; tgm:School
+10/05/2016 14:41:10 PM -- WARNING : 404 - resource not found ; tgm:Internet Safety
+10/05/2016 14:41:11 PM -- WARNING : 404 - resource not found ; tgm:Online
+10/05/2016 14:41:13 PM -- WARNING : 404 - resource not found ; tgm:HIV
+10/05/2016 14:41:13 PM -- WARNING : 404 - resource not found ; tgm:and Bioethics
+10/05/2016 14:41:13 PM -- WARNING : 404 - resource not found ; tgm:bioethics
+10/05/2016 14:41:13 PM -- WARNING : 404 - resource not found ; tgm:genetics
+10/05/2016 14:41:14 PM -- WARNING : 404 - resource not found ; tgm:eugenics
+10/05/2016 14:41:14 PM -- WARNING : 404 - resource not found ; tgm:genetic modification
+10/05/2016 14:41:14 PM -- WARNING : 404 - resource not found ; tgm:designer babies
+10/05/2016 14:41:15 PM -- WARNING : 404 - resource not found ; tgm:custody
+10/05/2016 14:41:15 PM -- WARNING : 404 - resource not found ; tgm:parental rights
+10/05/2016 14:41:16 PM -- WARNING : 404 - resource not found ; tgm:life support
+10/05/2016 14:41:16 PM -- WARNING : 404 - resource not found ; tgm:cease
+10/05/2016 14:41:17 PM -- WARNING : 404 - resource not found ; tgm:persistent vegetative state
+10/05/2016 14:41:17 PM -- WARNING : 404 - resource not found ; tgm:morally permissible
+10/05/2016 14:41:17 PM -- WARNING : 404 - resource not found ; tgm:right to die
+10/05/2016 14:41:17 PM -- WARNING : 404 - resource not found ; tgm:sanctity of life
+10/05/2016 14:41:17 PM -- WARNING : 404 - resource not found ; tgm:organ allocation
+10/05/2016 14:41:18 PM -- WARNING : 404 - resource not found ; tgm:consequentialist
+10/05/2016 14:41:18 PM -- WARNING : 404 - resource not found ; tgm:euthanasia
+10/05/2016 14:41:18 PM -- WARNING : 404 - resource not found ; tgm:ALS
+10/05/2016 14:41:18 PM -- WARNING : 404 - resource not found ; tgm:morally
+10/05/2016 14:41:19 PM -- WARNING : 404 - resource not found ; tgm:assisted suicide
+10/05/2016 14:41:19 PM -- WARNING : 404 - resource not found ; tgm:Overprotective parenting ethics
+10/05/2016 14:41:19 PM -- WARNING : 404 - resource not found ; tgm:child development
+10/05/2016 14:41:19 PM -- WARNING : 404 - resource not found ; tgm:psychological
+10/05/2016 14:41:20 PM -- WARNING : 404 - resource not found ; tgm:Decisions
+10/05/2016 14:41:22 PM -- WARNING : 404 - resource not found ; tgm:cognitive enhancers/enhancement
+10/05/2016 14:41:22 PM -- WARNING : 404 - resource not found ; tgm:pharmaceuticals
+10/05/2016 14:41:22 PM -- WARNING : 404 - resource not found ; tgm:abortion
+10/05/2016 14:41:22 PM -- WARNING : 404 - resource not found ; tgm:stem cell research
+10/05/2016 14:41:22 PM -- WARNING : 404 - resource not found ; tgm:embryonic
+10/05/2016 14:41:23 PM -- WARNING : 404 - resource not found ; tgm:Abortion
+10/05/2016 14:41:23 PM -- WARNING : 404 - resource not found ; tgm:Pro-Life
+10/05/2016 14:41:23 PM -- WARNING : 404 - resource not found ; tgm:Pro-Choice
+10/05/2016 14:41:23 PM -- WARNING : 404 - resource not found ; tgm:Thomson
+10/05/2016 14:41:23 PM -- WARNING : 404 - resource not found ; tgm:Violinist
+10/05/2016 14:41:24 PM -- WARNING : 404 - resource not found ; tgm:Stem Cell Research
+10/05/2016 14:41:24 PM -- WARNING : 404 - resource not found ; tgm:Induced Pluripotent Stem Cells
+10/05/2016 14:41:24 PM -- WARNING : 404 - resource not found ; tgm:Embryonic Stem Cells
+10/05/2016 14:41:24 PM -- WARNING : 404 - resource not found ; tgm:crime
+10/05/2016 14:41:24 PM -- WARNING : 404 - resource not found ; tgm:criminal
+10/05/2016 14:41:26 PM -- WARNING : 404 - resource not found ; tgm:publishing
+10/05/2016 14:41:27 PM -- WARNING : 404 - resource not found ; tgm:Organ donation
+10/05/2016 14:41:27 PM -- WARNING : 404 - resource not found ; tgm:HIV
+10/05/2016 14:41:27 PM -- WARNING : 404 - resource not found ; tgm:National Organ Transplant Act of 1984 (NOTA)
+10/05/2016 14:41:28 PM -- WARNING : 404 - resource not found ; tgm:animal equality
+10/05/2016 14:41:28 PM -- WARNING : 404 - resource not found ; tgm:human animals
+10/05/2016 14:41:28 PM -- WARNING : 404 - resource not found ; tgm:rights
+10/05/2016 14:41:28 PM -- WARNING : 404 - resource not found ; tgm:community
+10/05/2016 14:41:28 PM -- WARNING : 404 - resource not found ; tgm:personhood
+10/05/2016 15:55:16 PM -- WARNING : 404 - resource not found ; tgm:Greek Life
+10/05/2016 15:55:16 PM -- WARNING : 404 - resource not found ; tgm:sorority life
+10/05/2016 15:55:16 PM -- WARNING : 404 - resource not found ; tgm:bioethics
+10/05/2016 15:55:17 PM -- WARNING : 404 - resource not found ; tgm:cognitive enhancement
+10/05/2016 15:55:17 PM -- WARNING : 404 - resource not found ; tgm:cognitive enhancers
+10/05/2016 15:55:17 PM -- WARNING : 404 - resource not found ; tgm:Birth
+10/05/2016 15:55:17 PM -- WARNING : 404 - resource not found ; tgm:C-Section
+10/05/2016 15:55:17 PM -- WARNING : 404 - resource not found ; tgm:VBAC
+10/05/2016 15:55:17 PM -- WARNING : 404 - resource not found ; tgm:Obstetrics
+10/05/2016 15:55:17 PM -- WARNING : 404 - resource not found ; tgm:vegan
+10/05/2016 15:55:17 PM -- WARNING : 404 - resource not found ; tgm:vegetarian
+10/05/2016 15:55:18 PM -- WARNING : 404 - resource not found ; tgm:animal rights
+10/05/2016 15:55:18 PM -- WARNING : 404 - resource not found ; tgm:environment
+10/05/2016 15:55:18 PM -- WARNING : 404 - resource not found ; tgm:accessibility
+10/05/2016 15:55:18 PM -- WARNING : 404 - resource not found ; tgm:euthanasia
+10/05/2016 15:55:18 PM -- WARNING : 404 - resource not found ; tgm:physician-assisted suicide
+10/05/2016 15:55:18 PM -- WARNING : 404 - resource not found ; tgm:ethic
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:bioethics
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:categorical imperative
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:Greek Life
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:drug use
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:Kant
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:collegiate society
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:conscientious objection
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:abortion
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:Hippocratic oath
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:life in prison
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:human adaption
+10/05/2016 15:55:19 PM -- WARNING : 404 - resource not found ; tgm:set point theory
+10/05/2016 15:55:20 PM -- WARNING : 404 - resource not found ; tgm:Cyberbullying
+10/05/2016 15:55:20 PM -- WARNING : 404 - resource not found ; tgm:School
+10/05/2016 15:55:20 PM -- WARNING : 404 - resource not found ; tgm:Internet Safety
+10/05/2016 15:55:20 PM -- WARNING : 404 - resource not found ; tgm:Online
+10/05/2016 15:55:21 PM -- WARNING : 404 - resource not found ; tgm:HIV
+10/05/2016 15:55:21 PM -- WARNING : 404 - resource not found ; tgm:and Bioethics
+10/05/2016 15:55:21 PM -- WARNING : 404 - resource not found ; tgm:bioethics
+10/05/2016 15:55:21 PM -- WARNING : 404 - resource not found ; tgm:genetics
+10/05/2016 15:55:21 PM -- WARNING : 404 - resource not found ; tgm:eugenics
+10/05/2016 15:55:21 PM -- WARNING : 404 - resource not found ; tgm:genetic modification
+10/05/2016 15:55:21 PM -- WARNING : 404 - resource not found ; tgm:designer babies
+10/05/2016 15:55:22 PM -- WARNING : 404 - resource not found ; tgm:custody
+10/05/2016 15:55:22 PM -- WARNING : 404 - resource not found ; tgm:parental rights
+10/05/2016 15:55:23 PM -- WARNING : 404 - resource not found ; tgm:life support
+10/05/2016 15:55:23 PM -- WARNING : 404 - resource not found ; tgm:cease
+10/05/2016 15:55:23 PM -- WARNING : 404 - resource not found ; tgm:persistent vegetative state
+10/05/2016 15:55:23 PM -- WARNING : 404 - resource not found ; tgm:morally permissible
+10/05/2016 15:55:23 PM -- WARNING : 404 - resource not found ; tgm:right to die
+10/05/2016 15:55:23 PM -- WARNING : 404 - resource not found ; tgm:sanctity of life
+10/05/2016 15:55:23 PM -- WARNING : 404 - resource not found ; tgm:organ allocation
+10/05/2016 15:55:24 PM -- WARNING : 404 - resource not found ; tgm:consequentialist
+10/05/2016 15:55:24 PM -- WARNING : 404 - resource not found ; tgm:euthanasia
+10/05/2016 15:55:24 PM -- WARNING : 404 - resource not found ; tgm:ALS
+10/05/2016 15:55:24 PM -- WARNING : 404 - resource not found ; tgm:morally
+10/05/2016 15:55:24 PM -- WARNING : 404 - resource not found ; tgm:assisted suicide
+10/05/2016 15:55:24 PM -- WARNING : 404 - resource not found ; tgm:Overprotective parenting ethics
+10/05/2016 15:55:24 PM -- WARNING : 404 - resource not found ; tgm:child development
+10/05/2016 15:55:24 PM -- WARNING : 404 - resource not found ; tgm:psychological
+10/05/2016 15:55:25 PM -- WARNING : 404 - resource not found ; tgm:Decisions
+10/05/2016 15:55:26 PM -- WARNING : 404 - resource not found ; tgm:cognitive enhancers/enhancement
+10/05/2016 15:55:26 PM -- WARNING : 404 - resource not found ; tgm:pharmaceuticals
+10/05/2016 15:55:26 PM -- WARNING : 404 - resource not found ; tgm:abortion
+10/05/2016 15:55:26 PM -- WARNING : 404 - resource not found ; tgm:stem cell research
+10/05/2016 15:55:26 PM -- WARNING : 404 - resource not found ; tgm:embryonic
+10/05/2016 15:55:26 PM -- WARNING : 404 - resource not found ; tgm:Abortion
+10/05/2016 15:55:26 PM -- WARNING : 404 - resource not found ; tgm:Pro-Life
+10/05/2016 15:55:26 PM -- WARNING : 404 - resource not found ; tgm:Pro-Choice
+10/05/2016 15:55:27 PM -- WARNING : 404 - resource not found ; tgm:Thomson
+10/05/2016 15:55:27 PM -- WARNING : 404 - resource not found ; tgm:Violinist
+10/05/2016 15:55:27 PM -- WARNING : 404 - resource not found ; tgm:Stem Cell Research
+10/05/2016 15:55:27 PM -- WARNING : 404 - resource not found ; tgm:Induced Pluripotent Stem Cells
+10/05/2016 15:55:27 PM -- WARNING : 404 - resource not found ; tgm:Embryonic Stem Cells
+10/05/2016 15:55:27 PM -- WARNING : 404 - resource not found ; tgm:crime
+10/05/2016 15:55:27 PM -- WARNING : 404 - resource not found ; tgm:criminal
+10/05/2016 15:55:28 PM -- WARNING : 404 - resource not found ; tgm:publishing
+10/05/2016 15:55:28 PM -- WARNING : 404 - resource not found ; tgm:Organ donation
+10/05/2016 15:55:28 PM -- WARNING : 404 - resource not found ; tgm:HIV
+10/05/2016 15:55:28 PM -- WARNING : 404 - resource not found ; tgm:National Organ Transplant Act of 1984 (NOTA)
+10/05/2016 15:55:28 PM -- WARNING : 404 - resource not found ; tgm:animal equality
+10/05/2016 15:55:28 PM -- WARNING : 404 - resource not found ; tgm:human animals
+10/05/2016 15:55:29 PM -- WARNING : 404 - resource not found ; tgm:rights
+10/05/2016 15:55:29 PM -- WARNING : 404 - resource not found ; tgm:community
+10/05/2016 15:55:29 PM -- WARNING : 404 - resource not found ; tgm:personhood

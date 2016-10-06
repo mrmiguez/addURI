@@ -1,0 +1,1402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<repository xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instanc">
+<record><header><identifier>oai:fsu.digital.flvc.org:fsu_209910</identifier><datestamp>2015-12-14T23:25:13Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Defining Hazing and The Immorality of Hazing By Sororities</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Hillary</mods:namePart>
+    <mods:namePart type="family">Schmalzer</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>In this paper I aim to question the morality of certain activities that sororities practice. The definition of hazing in this article came from several sources, such as university and national PanHellenic association websites. Hazing is any act that is intended to embarrass, humiliate, degrade or ridicule. These incidents can cause harm physically and even mentally. Research has reveled that when young college girls are put through such degrading activities that they have lowered self-esteem after the activity. A huge issue with hazing in Greek life has been correlated with alcohol abuse. You can see an example of the incident later from a testimony given by a young college graduate. In the article the argument is this, a woman should not be forced to participate in detrimental activities because these violate our own human rights. Others object this claim by stating that hazing activities are good for the young individual to grow and mature. The hopes for this paper is that it will start further research on the harm of these traditional hazing rituals practiced by sorority women on new members. Further research on the topic will hopefully lead to the end of hazing on college campuses all together.</mods:abstract>
+  <mods:note displayLabel="Keywords">Greek Life, hazing, sorority life</mods:note>
+  <mods:note displayLabel="Note">© 2013, Hillary Schmalzer</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0014</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0014</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209910</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209908</identifier><datestamp>2015-12-14T23:25:08Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Long-Term Ethical Issues and Logistics Concerning Cognitive Enhancement</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Jordan</mods:namePart>
+    <mods:namePart type="family">Brenneis</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>This paper explores the ethical issues surrounding cognitive enhancement, focusing on the long-term societal effects and logistics of pharmaceutical cognitive enhancement use. Pharmaceutical cognitive enhancements are being used at a startling rate, especially by college students. These students are using enhancers despite their detrimental effects to the user and those around them. This paper finds cognitive enhancement by the healthy to be ethically wrong, as enhancement use by healthy individuals is unfair to many members of society, strains limited health and medical resources which could be otherwise used to solve actual medical problems, involves a wide range of health issues which are still largely unknown, would involve people using unnatural means to improve their bodies, and would, against their better judgment, encourage others to use harmful cognitive enhancements. Based on these findings, it is suggested that prescription of these medicines be made more strict and drug tests be implemented for cognitive enhancers at universities.</mods:abstract>
+  <mods:note displayLabel="Keywords">bioethics, ethics, cognitive enhancement, cognitive enhancers</mods:note>
+  <mods:note displayLabel="Note">© 2013, Jordan Brenneis</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0012</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0012</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209908</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209904</identifier><datestamp>2015-12-14T23:25:00Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Ethics of Hospital Regulations on Vaginal Births After Cesarean Sections</mods:title>
+    <mods:nonSort>The</mods:nonSort>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">David</mods:namePart>
+    <mods:namePart type="family">Miller</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>In recent decades, the cesarean section has become an increasingly common mode of childbirth. Since 1999, there has also been a drastic decrease in vaginal births after cesarean sections (VBACs), with more women and physicians instead opting for repeat cesarean sections among women who have already undergone cesarean sections. Further, many hospitals have gone so far as to prohibit vaginal births for women who have previously given birth through cesarean section. In this research I consider the ethical implications of hospital regulations on vaginal births after cesarean sections through an application of the principles of patient autonomy and patient dignity. I argue that these principles, though infrequently applied to VBAC regulations, are more reasonable and conclusive than arguments based on beneficence, which rely on weak claims regarding the health risks of vaginal births and cesarean sections. Ultimately, I conclude that VBAC regulations in hospitals constitute ethical violations, and I call for updated regulations by hospitals and the American College of Obstetrics and Gynecologists regarding VBAC practices in order to improve the public approval of the practice and increase the rate of vaginal births after cesarean sections.</mods:abstract>
+  <mods:note displayLabel="Keywords">Ethics, Birth, C-Section, VBAC, Obstetrics</mods:note>
+  <mods:note displayLabel="Note">© 2013, David G. Miller</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0008</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0008</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209904</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209911</identifier><datestamp>2015-12-14T23:25:15Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Most Moral Way to Eat</mods:title>
+    <mods:nonSort>The</mods:nonSort>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Hannah</mods:namePart>
+    <mods:namePart type="family">Reiss</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Since birth, children are force fed concepts regarding dietary needs and requirements. In America, the cultural norm is to eat animal products and such practices are rarely questioned. Vegetarianism and veganism are considered to be a form of counterculture, however there are many benefits of adopting vegan diet. From a utilitarian approach, people should eat a plant-based vegan diet, if at all possible, because it reduces the amount of harm, results in fewer deaths and decreases money spent. Additionally, a vegan diet increases happiness and results in the most moral way to eat. The arguments are meant to summarize veganism as the ideal moral way to eat considering animal rights, environmental effects, and health benefits. Unlike other works on the topic, this paper will outline the responsibilities of current vegans.</mods:abstract>
+  <mods:note displayLabel="Keywords">vegan, vegetarian, moral, animal rights, environment, health, accessibility</mods:note>
+  <mods:note displayLabel="Note">© 2013, Hannah Reiss</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0015</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0015</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209911</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209906</identifier><datestamp>2015-12-14T23:25:04Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Why Euthanasia and Physician-Assisted Suicide are Morally Permissible</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Kelly</mods:namePart>
+    <mods:namePart type="family">Crocker</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Although there has been much debate about the immorality or moral permissibility of physician-assisted suicide and euthanasia separately, there is little discussion encompassing both debates together. I argue in favor of the moral permissibility of these two topics. The major arguments addressed include some that are frequently addressed such as models of correct use of physician-assisted suicide, quality of life, and individual rights, as well as a few that arguments that have gotten little to no attention such as the utilitarian argument of less suffering and a thought experiment comparing the common euthanization of animals to the controversial euthanization of humans. I next address the major objections that opponents of physician- assisted suicide and euthanasia claim, these include: corruption of the doctor's role as a healer, slippery slope and fear of abuse, and that there are alternatives to euthanasia. Lastly, I respond to these objections with further evidence to support my claim that these acts are morally permissible. The aim of this paper is to make a comprehensive argument in favor of physician- assisted suicide and euthanasia, which are frequently addressed in separate debates.</mods:abstract>
+  <mods:note displayLabel="Keywords">euthanasia, physician-assisted suicide, moral, ethic, bioethics</mods:note>
+  <mods:note displayLabel="Note">© 2013, Kelly Crocker</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0010</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0010</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209906</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209913</identifier><datestamp>2015-12-14T23:25:49Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Categorical Imperative and Collegiate Society</mods:title>
+    <mods:nonSort>The</mods:nonSort>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Zachary</mods:namePart>
+    <mods:namePart type="family">Bess-Lima</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>This paper examines Greek Life and recreational drug use as two pillars of the collegiate society where college students are violating the 1st and 3rd formulations of Kant's categorical imperative. This is done by the analysis of the motivations behind such actions as hazing and social interactions in fraternities and sororities, and also how the act of using drugs is using your body as a mere means to achieve pleasure. This paper offers a new perspective to the collegiate landscape and attempts to show how this can possibly be changed. This paper can possibly motivate a reformation of the two pillars and perhaps change the collegiate society for the better.</mods:abstract>
+  <mods:note displayLabel="Keywords">categorical imperative, Greek Life, drug use, Kant, collegiate society</mods:note>
+  <mods:note displayLabel="Note">© 2013, Zachary Bess-Lima</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0017</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0017</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209913</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209915</identifier><datestamp>2015-12-14T23:25:54Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Conscientious Objection for Abortion</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Sierra</mods:namePart>
+    <mods:namePart type="family">Rubin</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>In this paper, I discuss why conscientious objection should not be used in cases of abortion. According to a modern day interpretation of the Hippocratic oath, doctors have the responsibility to do whatever it takes to better the lives of their patients. This includes abortion if that is what the patient requests. I propose a law making abortions more accessible for women, stating that there must be at least one doctor at every hospital who is capable and willing to perform abortions.</mods:abstract>
+  <mods:note displayLabel="Keywords">conscientious objection, abortion, Hippocratic oath</mods:note>
+  <mods:note displayLabel="Note">© 2013, Sierra Rubin</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0019</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0019</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209915</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209918</identifier><datestamp>2015-12-14T23:26:00Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Efficiency of Life in Prison in Terms of Human Adaption</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Rachel</mods:namePart>
+    <mods:namePart type="family">Lowitz</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Known as set point theory in psychology, humans possess the innate ability to emotionally adapt to any livable situation and eventually return to their natural level of cheerfulness. In my argument, I claim that when applied to criminals serving life in prison without parole, this ability to adapt creates only a temporary punishment. The intention of the sentence, meant originally as retribution severe enough to fit a horrendous crime, is lessened as the inmate adapts and finds a new home inside prison walls. Life in prison without parole is unsuccessful in continuing to realize the severity of the original sentence. The death penalty, therefore, is the only remaining option capable of rendering a fitting punishment for violent criminals. To solidify my claims, I acknowledge that while there are several purposes to prison, punishment is the most important when dealing with the violent criminals being discussed in my argument. In terms of this dissertation, violent criminals are individuals proven guilty of crimes brutal enough to only allow the possibility of life in prison without parole or the death penalty. Once this is accepted, I attest to the power and extent of human adaption by citing specific studies. To demonstrate adaption occurs specifically in prison, I focus on an inmate who witnesses and describes the adaption firsthand. Through my argument, I apply independently proven psychology ideas that have never before been partnered with criminal sentencing, shedding light on a new dimension of the death penalty argument.</mods:abstract>
+  <mods:note displayLabel="Keywords">death penalty, life in prison, human adaption, set point theory</mods:note>
+  <mods:note displayLabel="Note">© 2013, Rachel Lowitz</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0022</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0022</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209918</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209919</identifier><datestamp>2015-12-14T23:26:02Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>School System's Role in Cyberbullying</mods:title>
+    <mods:nonSort>The</mods:nonSort>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Luisa</mods:namePart>
+    <mods:namePart type="family">Laitano</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>The digital age has expanded the problem of bullying onto online platforms, which serve as adult-free havens for children to congregate and inflict pain on one another. This paper examines the role of the school system in cases of cyberbullying occurring off-campus. I argue that the school system carries a tremendous responsibility to monitor and prevent cyberbullying because of its commitment to education and teaching good citizenship for a global society, its obligation to offer aid and protection to those in need, and its duty to provide an academically conducive environment for kids to learn. The potential infringement on 1st amendment student rights, the responsibility of parents to monitor and teach children right from wrong, and the problematic integration of cyberbullying education into current school curriculum are addressed as objections and discredited through counterclaims and using Utilitarian perspectives. This paper demonstrates why holding the school system responsible for Internet safety education is the most beneficial strategy for cultivating a safe environment in our increasingly online society. The responsibility, empathy, and maturity needed to prevent cyberbullying are best taught consistently and within existing school curricula. The school system should have the power to educate and protect its students because the aspects of good citizenship that are tied to Internet education should be treated as indispensible traits integral to a well-rounded education.</mods:abstract>
+  <mods:note displayLabel="Keywords">Cyberbullying, School, Bullying, Internet Safety, Online, Behavior, Students</mods:note>
+  <mods:note displayLabel="Note">© 2013, Luisa Laitano</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0023</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0023</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209919</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209907</identifier><datestamp>2015-12-14T23:25:06Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Ethics of Universal HIV Testing Amongst College Students</mods:title>
+    <mods:nonSort>The</mods:nonSort>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Jordan</mods:namePart>
+    <mods:namePart type="family">McKean</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Universal HIV testing is a newly developing idea in the United States. While some authors have addressed the ethical implications of this idea using countries in Africa as models, this paper explores mandatory HIV testing in the US, primarily in college students. The time that one spends in their undergraduate college career is a critical period of possible HIV contraction. Most newly infected individuals fall between the ages of 20-24. Requiring HIV testing in college students is an attempt to lower the number of individuals diagnosed HIV-positive every year. This also comes with the added benefit of early detection, better treatment options, and decreased transmission. While most argue against mandatory HIV testing because of possible infringement on autonomy, this paper will address a case at Florida State University where informed consent is not in practice. Other possible objections will be explored as well and a plan on how to move forward in the implementation of universal HIV testing will be offered. In addition to fighting for a cure, mandatory testing is the most important and moral course of action in reducing cases of HIV.</mods:abstract>
+  <mods:note displayLabel="Keywords">Ethics, HIV, and Bioethics</mods:note>
+  <mods:note displayLabel="Note">© 2013, Jordan McKean</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0011</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0011</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209907</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209912</identifier><datestamp>2015-12-14T23:25:47Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Different Methods of Human Genetic Modification and their Ethical Issues</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Emily</mods:namePart>
+    <mods:namePart type="family">Hollifield</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>This essay focuses on the various types of and motives for genetic modification and their implications. The two main delineations are medical and cosmetic genetic engineering. This essay argues for medical engineering, while arguing against cosmetic engineering. Medical engineering refers to the prevention of genetic diseases and congenital conditions. Some objections that arise are the fear over methods of implementation and the difficulty of what constitutes a disease or disability and the fear of ensuing discrimination. Cosmetic engineering is the modification of the genome for the specific purpose of changing a physical attribute or talent, such as athleticism or intelligence. It detracts from what being human means, as well as bringing up the issue of "designer babies" and "savior siblings." The objections to this are that physical attributes are only part of being human and that because there is no one concept of ideal, "designer babies" wouldn't be all the same. This essay also briefly discusses the options of non- human genetic alterations and the implications that would further arise.</mods:abstract>
+  <mods:note displayLabel="Keywords">ethics, bioethics, genetics, eugenics, genetic modification, designer babies</mods:note>
+  <mods:note displayLabel="Note">© 2013, Emily Hollifield</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0016</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0016</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209912</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209920</identifier><datestamp>2015-12-14T23:26:04Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Ethical Determination of Custody for Divorced Parents of Adolescents</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Leah</mods:namePart>
+    <mods:namePart type="family">Ramsier</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>This paper examines how divorced parents can ethically create custody arrangements for their adolescents. It argues for a parental right to have custody of the child, suggesting that both parents should split custody. These parental rights are based on the idea that parents should be allowed to continue parenting if they continue to provide enough support for their child and that intimacy with one's children is irreplaceable through any other relationship. It also argues that best interests are not a strong enough claim to override parental rights. Parental rights should be supplemented with an effort to minimize conflict. Finally, it touches upon the need to take the adolescent's opinion into consideration. All of these factors combine into a moral approach parents can use to split custody.</mods:abstract>
+  <mods:note displayLabel="Keywords">Ethics, divorce, custody, parental rights, philosophy, adolescents</mods:note>
+  <mods:note displayLabel="Note">© 2013, Leah Ramsier</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0024</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0024</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209920</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209916</identifier><datestamp>2015-12-14T23:25:56Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Moral Permissibility of Discontinuing Life-Support</mods:title>
+    <mods:nonSort>The</mods:nonSort>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Sarah</mods:namePart>
+    <mods:namePart type="family">Mundt</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>In this paper I will discuss the morality of life supporting measures. I argue that once an individual is either permanently unconscious or is in persistent vegetative state that it is morally permissible to cease life supporting measures. Throughout this paper I define persistent vegetative state and utilize this definition as one of my claims for why I argue ceasing life supporting measures is morally permissible. I also include real life cases, such as the highly publicized end-of-life case involving Terry Schaivo, that showcases some of the implications of my claims.</mods:abstract>
+  <mods:note displayLabel="Keywords">life support, cease, persistent vegetative state, morally permissible, right to die, sanctity of life</mods:note>
+  <mods:note displayLabel="Note">© 2013, Sarah Mundt</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0020</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0020</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209916</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209905</identifier><datestamp>2015-12-14T23:25:02Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Ethics of Organ Allocation</mods:title>
+    <mods:subTitle>A Consequentialist Approach</mods:subTitle>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Danae</mods:namePart>
+    <mods:namePart type="family">Massengill</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>With the demand for organ transplantation greatly outweighing the supply of donated organs, two current ethical issues surround how to increase the number of available organs and how to allocate the organs upon donation. In this paper, I focus on the current organ allocation system and ways to amend the process. I suggest that the process should place the strongest consideration on the consequentialist principle in order that the best candidate is in receipt of the transplanted organ, which then increases the overall survival rate of the transplant. This approach maximizes the utility of the organ and the efficiency of the system as it increases the success rate and decreases the rejection rate of the transplanted organ. In order to accomplish this, the system should prioritize the likelihood for success after transplantation as opposed to current factors such as medical urgency, distance between organ donor and recipient, time on waiting list and previous donor status. Additionally, low priority should be given to individuals that harbor responsibility for their current medical condition and financial hardship should not limit access to transplantation. I conclude that these criteria should be treated with the heaviest weight, but other factors should not be completely ignored.</mods:abstract>
+  <mods:note displayLabel="Keywords">organ allocation, ethics, consequentialist</mods:note>
+  <mods:note displayLabel="Note">© 2013, Danae Massengill</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh95000471">
+    <mods:topic>Allocation of organs, tissues, etc.</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0009</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0009</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209905</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209909</identifier><datestamp>2015-12-14T23:25:11Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Euthanasia and the Terminally Ill</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Jessica</mods:namePart>
+    <mods:namePart type="family">Stern</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>This paper discusses the morality behind euthanasia of terminally ill patients. I argue for euthanasia by explaining that everyone has the right to his or her own body and to death, that death is a private matter that should not be prohibited by the state, and that people want to die with dignity and euthanasia allows for one to do that. I address counterarguments regarding the sanctity of life, the undermining of doctors' commitment to save lives, and the best interest of the patient. I discuss these counterarguments and proceed to explain why they are not sound in convincing one that euthanasia is never morally permissible. I conclude the essay by clarifying that euthanasia should not only be legal, but is morally permissible for terminally ill patients who have exhausted all other plausible treatment options.</mods:abstract>
+  <mods:note displayLabel="Keywords">euthanasia, ALS, morally, assisted suicide</mods:note>
+  <mods:note displayLabel="Note">© 2013, Jessica Stern</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0013</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0013</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209909</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209914</identifier><datestamp>2015-12-14T23:25:51Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Wrong Way to Parent</mods:title>
+    <mods:nonSort>The</mods:nonSort>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Tyler</mods:namePart>
+    <mods:namePart type="family">Bess-Lima</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>This is an argument against overprotective parenting. Those who do so are creating an environment that limits their children's psychological and moral growth and development. Overprotective parents control two very important aspects of their children's lives that are instrumental in their development. Parental control over the education and the social lives of their children creates children who do not have what is needed in order to make moral decisions. These children's capabilities or lack there-of, as a result of this parenting, make them unable to make the most moral decisions possible. This argument bridges the gap between psychological and moral development of children and how parenting affects this. By taking psychological research and applying it to ethics and morals, one can come away from this argument understanding how overprotective parenting not only inhibits the psychological growth of children, but of their moral development as well.</mods:abstract>
+  <mods:note displayLabel="Keywords">Overprotective parenting ethics, child development, morals, psychological</mods:note>
+  <mods:note displayLabel="Note">© 2013, Tyler Bess-Lima</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0018</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0018</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209914</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209917</identifier><datestamp>2015-12-14T23:25:58Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>How We Should Make Moral Career Choices</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Rebecca</mods:namePart>
+    <mods:namePart type="family">Hallock</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>This paper will respond to previous approaches for choosing the most moral career. It will provide motivation for making an ethical career choice not based on a consequentialism. Natural Law Theory will be used in combination with Virtue Ethics to build a framework for evaluating intentions in order to make a moral career selection. A basic method for such an evaluation will be outlined. Furthermore, implications to human dignity will be discussed with reference to consequentialism. Finally, major objections to this method of career selection will be addressed.</mods:abstract>
+  <mods:note displayLabel="Keywords">Ethics, Career, Decisions, Philosophy, Choices</mods:note>
+  <mods:note displayLabel="Note">© 2013, Rebecca Hallock</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0021</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0021</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209917</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209897</identifier><datestamp>2015-12-14T23:24:14Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Ethical Arguments for the Use of Cognitive Enhancers</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Colby</mods:namePart>
+    <mods:namePart type="family">Clayborne</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Issues surrounding the use of cognitive enhancers by healthy adults have given rise to numerous ethical concerns. It may be considered unnatural, unfair to those who cannot or do not use them, or unsafe in certain ways, and therefore some consider it morally impermissible on these grounds. However, I argue that limiting the use of such drugs to those with valid prescriptions is immoral in its own right, as it infringes upon our rights. It appears detrimental to society to limit use in this way, as we hold ourselves back from general improvements to everyday life, as well as from dramatic improvements as a result of new discovery. I argue that nearly every aspect of life can be improved through the use of such enhancers, and I propose the cognitive enhancers could make the world a safer place. I analyze enhancement in such a way that forces opponents to evaluate why they oppose cognitive enhancers, and how their opinions may change in the future as better drugs become available. I address the benefits of increased competition that would certainly result from the use of these pharmaceuticals. I conclude by conceding that more research must be done as so little is known about the use of these enhancers by healthy individuals, but I claim with valid reasoning that it should be morally permissible for such drugs to be used by anyone of age.</mods:abstract>
+  <mods:note displayLabel="Keywords">ethics, cognitive enhancers/enhancement, pharmaceuticals</mods:note>
+  <mods:note displayLabel="Note">© 2013, Colby Clayborne</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0001</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0001</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209897</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209898</identifier><datestamp>2015-12-14T23:24:17Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Ethics of Embryonic Stem Cell Research</mods:title>
+    <mods:nonSort>The</mods:nonSort>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Ariana</mods:namePart>
+    <mods:namePart type="family">von Lersner</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Embryonic stem cell research involves the destruction of an embryo after stem cells are extracted. The ethical considerations of destroying an embryo results in a controversy where proponents of the research are pitted against pro life supporters who abhor the destruction of the embryo as immoral. This paper addresses the objections to embryonic stem cell research, similar to those against abortion, which are rooted in the belief that it is morally impermissible to intentionally take the life of an innocent human being. The counterargument is presented such that the use of embryonic stem cells in research does not represent the death of a human being; instead it provides valuable life saving medical breakthroughs, and thus is a morally permissible use of discarded embryos. This paper contributes to the defense of stem cell research by highlighting scientific reasons why it is ethically permissible. It makes a clear distinction between the definition of a human being and that of an embryo used in stem cell research.</mods:abstract>
+  <mods:note displayLabel="Keywords">ethics, abortion, stem cell research, embryonic</mods:note>
+  <mods:note displayLabel="Note">© 2013, Ariana von Lersner</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0002</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0002</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209898</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209903</identifier><datestamp>2015-12-14T23:24:58Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>When Rights are Wrong; Tacit Consent and Bodily Autonomy</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Dylan</mods:namePart>
+    <mods:namePart type="family">Bukaweski</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Abortion, one of the most hotly contested debates in contemporary philosophy, has garnered a large amount of discussion over time. One of the most influential writings on this topic is Judith Jarvis Thomson's A Defense of Abortion. In this essay, I present Thomson's influential thought experiments and attempt to create an argument that supports the well-known tacit consent objection to suggest that in situations where the actions of an actor place another in a state of total dependence on the actor, the actor is morally responsible for sustaining that individual unless doing so would cause substantial harm to the actor. I analyze arguments from authors on both sides of the debate, including Alcorn and Boonin, and offer a small piece of personal contribution to formulate premises and come to my final conclusion that abortion is an immoral act.</mods:abstract>
+  <mods:note displayLabel="Keywords">Abortion, Pro-Life, Pro-Choice, Thomson, Violinist</mods:note>
+  <mods:note displayLabel="Note">© 2013, Dylan Bukaweski</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0007</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0007</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209903</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209899</identifier><datestamp>2015-12-14T23:24:19Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Moral Issues of Embryonic Stem Cell Research, and Their Potential Solution</mods:title>
+    <mods:nonSort>The</mods:nonSort>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Amber</mods:namePart>
+    <mods:namePart type="family">Denton</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Embryonic stem cell research is on the frontiers of medicine as of late and holds the potential for improving practices such as organ donation and drug testing. However, the procedures involved in embryonic stem cell research are rooted in moral dispute. Many uphold that this practice is morally impermissible due to the fact that it results in the destruction of human embryos. Additional problems arise when it comes to determining the moral status of the human embryo and the risks posed to donor women throughout the process. Arguments exist over when a human embryo should be awarded moral status, if at all, and those considering the debate from a religious standpoint are also dubious of the moral implications of embryonic stem cell research. I examine these various faults in the argument for embryonic stem cell research throughout this paper, and offer up an alternative solution. Induced pluripotent stem cell research, although a relatively new advancement in medicine, may provide the medical community with a way in which to avoid many of these issues. The key feature behind this innovation lies in the fact that human embryos are not destroyed or acted upon throughout the procedure, and research could be conducted with the use of skin cells instead. I contribute to the discussion on the stem cell debate throughout the paper by considering a range of moral arguments and concerns not often considered, and with a few of my own responses to common objections made to induced pluripotent stem cell research.</mods:abstract>
+  <mods:note displayLabel="Keywords">Stem Cell Research, Induced Pluripotent Stem Cells, Embryonic Stem Cells</mods:note>
+  <mods:note displayLabel="Note">© 2013, Amber Denton</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0003</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0003</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209899</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209901</identifier><datestamp>2015-12-14T23:24:23Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Ethics of Mug Shot Publishing</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Adam</mods:namePart>
+    <mods:namePart type="family">Greenstein</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Mug shot publishing is a growing industry that involves releasing and publishing mug shots online or in print. Releasing images of suspects who are not convicted of crimes raises many moral concerns. Often these images become popular online, sometimes going viral. Many of the individuals in the most popular images appear sick, injured, disfigured or mentally ill. Allowing these images to be published and spread in a sensationalized manner creates a societal injustice by trivializing the criminal justice system and the individuals who are part of it. In addition, the fact that many of the individuals in these images have not been convicted of any crimes undermines how society perceives criminals and criminal activity. Previously there has been little discussion about the ethical implications of this topic, which has allowed this industry to spread with little resistance from the public. As this industry grows and becomes more popular, it is important that society is made more aware about the consequences of such industry.</mods:abstract>
+  <mods:note displayLabel="Keywords">crime, criminal, mug shot, ethics, justice, publishing, society</mods:note>
+  <mods:note displayLabel="Note">© 2013, Adam Greenstein</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0005</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0005</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209901</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209900</identifier><datestamp>2015-12-14T23:24:21Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Ethical Implications of an Amendment to the National Organ Transplant Act of 1984
+         (NOTA), to Allow Solid Organ Donation Between HIV- Positive Patients</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Alexa</mods:namePart>
+    <mods:namePart type="family">Rivera</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Due to the National Organ Transplant Act of 1984 (NOTA), in the United States it is illegal to perform solid organ donation between HIV-positive patients. If NOTA was amended it would provide organs, such as kidneys, to HIV- positive patients and help to alleviate some of the stress on the current organ transplant waiting list. The arguments not in favor of an amendment include that it is a risky procedure for the HIV- positive patients and for others involved in the procedure, such as surgeons and the surgical team. The response to this argument is that solid organ donation should be legalized and not banned due to the potential risks. The patients and surgical staff that would be participating in organ transplant between HIV- positive patients would knowingly assume certain risks. With the ban on this procedure the autonomy of HIV-patients is not being considered. HIV- positive patients should make the decision on whether or not they want to undergo this potentially lifesaving procedure and it should not be at the discretion of the government.</mods:abstract>
+  <mods:note displayLabel="Keywords">Organ donation, HIV, National Organ Transplant Act of 1984 (NOTA)</mods:note>
+  <mods:note displayLabel="Note">© 2013, Alexa Rivera</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85104354">
+    <mods:topic>Political ethics</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh85100849">
+    <mods:topic>Philosophy</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0004</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0004</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209900</identifier></mods:mods></metadata></record><record><header><identifier>oai:fsu.digital.flvc.org:fsu_209902</identifier><datestamp>2015-12-14T23:24:55Z</datestamp><setSpec>fsu_honors_ethical_issues_and_life_choices</setSpec></header><metadata><mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:flvc="info:flvc/manifest/v1" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:titleInfo lang="eng">
+    <mods:title>Animals are People Too</mods:title>
+  </mods:titleInfo>
+  <mods:name authority="local" type="personal">
+    <mods:namePart type="given">Ellen</mods:namePart>
+    <mods:namePart type="family">Hoher</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="rda" type="text">author</mods:roleTerm>
+      <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:genre authority="rdacontent">text</mods:genre>
+  <mods:originInfo>
+    <mods:dateIssued encoding="w3cdtf" keyDate="yes">2013</mods:dateIssued>
+    <mods:issuance>serial</mods:issuance>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="text">English</mods:languageTerm>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:form authority="rdamedia" type="RDA media terms">computer</mods:form>
+    <mods:form authority="rdacarrier" type="RDA carrier terms">online
+                                    resource</mods:form>
+    <mods:extent>1 online resource</mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:internetMediaType>application/pdf</mods:internetMediaType>
+  </mods:physicalDescription>
+  <mods:abstract>Worth is inherent. It cannot be given or taken away. Human animals as well as non-human animals have intrinsic value, which can be observed by comparing the communities that they live within. Human and non-human animals are not equal, but equivalent. Humans' laws, policies, and guidelines should note and reflect the rights of both human and non-human animals. This paper examines elephants in relation to the above.</mods:abstract>
+  <mods:note displayLabel="Keywords">animal equality, human animals, rights, community, personhood, elephants</mods:note>
+  <mods:note displayLabel="Note">© 2013, Ellen E. Hoher</mods:note>
+  <mods:subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/sh2009114973">
+    <mods:topic>Animal rights</mods:topic>
+    <mods:topic>Moral and ethical aspects</mods:topic>
+  </mods:subject>
+  <mods:recordInfo>
+    <mods:recordCreationDate encoding="w3cdtf">2015-06-20T10:03:14.455-04:00</mods:recordCreationDate>
+    <mods:descriptionStandard>rda</mods:descriptionStandard>
+  </mods:recordInfo>
+  <mods:relatedItem type="series">
+    <mods:titleInfo lang="eng">
+      <mods:title>Honors Ethical Issues and Life Choices (PHI2630)</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:extension>
+    <flvc:flvc>
+      <flvc:owningInstitution>FSU</flvc:owningInstitution>
+      <flvc:submittingInstitution>FSU</flvc:submittingInstitution>
+    </flvc:flvc>
+  </mods:extension>
+  <mods:identifier type="IID">FSU_migr_phi2630-0006</mods:identifier>
+  <mods:location displayLabel="purl">
+    <mods:url>http://purl.flvc.org/fsu/fd/FSU_migr_phi2630-0006</mods:url>
+  </mods:location>
+<identifier type="fedora">fsu:209902</identifier></mods:mods></metadata></record>
+</repository>

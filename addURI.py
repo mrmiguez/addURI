@@ -34,12 +34,28 @@ class get_subject_parts:
                 subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
             elif authority_div.find('span', property="madsrdf:variantLabel skosxl:literalForm"):
                 use_instead = authority_div.find('h3', text="Use Instead")        
-                varient_URI = use_instead.find_next('a').text                          
-                subject_heading = get_subject_parts.tgm_simple(requests.get(varient_URI, timeout=5))[1]
-                subject_uri = varient_URI   
+                variant_URI = use_instead.find_next('a').text                          
+                subject_heading = get_subject_parts.tgm_simple(requests.get(variant_URI, timeout=5))[1]
+                subject_uri = variant_URI   
         return subject_uri, subject_heading
             
         
+    def lcsh_simple(subject_LOC_reply):
+        subject_html = subject_LOC_reply.text
+        subject_uri = subject_LOC_reply.url[0:-5]
+        subject_soup = BeautifulSoup(subject_html, 'lxml')
+        for authority_div in subject_soup.find_all('div', about=subject_uri):
+            if authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel") is not None:
+                subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
+            elif authority_div.find('a', property="madsrdf:authoritativeLabel skos:prefLabel") is not None:
+                subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
+            elif authority_div.find('span', property="madsrdf:variantLabel skosxl:literalForm"):
+                use_instead = authority_div.find('h3', text="Use Instead")        
+                variant_URI = use_instead.find_next('a').text                          
+                subject_heading = get_subject_parts.tgm_simple(requests.get(variant_URI, timeout=5))[1]
+                subject_uri = variant_URI   
+        return subject_uri, subject_heading       
+    
     ''' 
     # LCSH complex
     subject_soup = BeautifulSoup(subject_html.text, 'lxml')
@@ -61,8 +77,9 @@ def write_record_subjects(record, subjects, PID):
             # build tgm subjects
             if 'tgm' in appending_subject.keys():
                 subject = etree.Element('{%s}subject' % nameSpace_default['mods'],
-                                        authority='tgm', 
-                                        authorityURI=appending_subject['tgm'][0])
+                                        authority='lctgm', 
+                                        authorityURI=appending_subject['tgm'][0][0:45],
+                                        valueURI=appending_subject['tgm'][0])
                 topic = etree.SubElement(subject, '{%s}topic' % nameSpace_default['mods'])
                 topic.text = appending_subject['tgm'][1]
             
@@ -70,8 +87,10 @@ def write_record_subjects(record, subjects, PID):
             elif 'lcsh' in appending_subject.keys():
                 subject = etree.Element('{%s}subject' % nameSpace_default['mods'],
                                         authority='lcsh', 
-                                        authorityURI='http://id.loc.gov/authorities/subjects')
-                subject.text = appending_subject['lcsh']
+                                        authorityURI=appending_subject['lcsh'][0][0:38],
+                                        valueURI=appending_subject['lcsh'][0])
+                topic = etree.SubElement(subject, '{%s}topic' % nameSpace_default['mods'])
+                topic.text = appending_subject['lcsh'][1]
             record.append(subject)
 
         # write new records    
@@ -84,7 +103,7 @@ def get_keyword_list(record):
     for note in mods.note(record):
         if 'Keywords' in note.keys():
             for keyword in note['Keywords'].split(','):
-                keywords.append(keyword.strip())
+                keywords.append(keyword.strip()) # going to have to deal with en & em dashes
     return keywords
 
 
@@ -120,8 +139,8 @@ class uri_lookup:
     
    #LCSH
     def lcsh(keyword, record_PID):
-        pass
-    '''    
+#        pass
+        
         global LOC_try_index
         global error_log
         lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword.replace(' ','%20')),
@@ -129,7 +148,7 @@ class uri_lookup:
         # request successful
         if lcsh_lookup.status_code == 200:
             LOC_try_index = 0
-            return lcsh_lookup.url[0:-5]
+            return get_subject_parts.lcsh_simple(lcsh_lookup)
         # 404
         elif lcsh_lookup.status_code == 404:
             logging.warning('404 - resource not found ; [{0}]--{1}'.format(record_PID, 'lcsh:' + keyword))
@@ -145,7 +164,7 @@ class uri_lookup:
             logging.warning('Other status code - {0} ; [{1}]--{2}'.format(tgm_lookup.status_code, record_PID, 'lcsh:' + keyword))
             error_log = True
             return None
-    '''
+    
 
 # init error logger
 logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
@@ -156,7 +175,6 @@ logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
 # loop over MODS record list returned by pymods.mods.load                    
 for record in mods.load(sys.argv[1]):
     record_write = False
-#    record_write = True      # testing value to force record writing
     appending_subjects = []
 
     # check timeout index
@@ -166,20 +184,20 @@ for record in mods.load(sys.argv[1]):
 
         # loops over keywords 
         for keyword in get_keyword_list(record): 
-            print(keyword) # trouble-shooting mark
+
             try:
             
                 # TGM subject found
                 if uri_lookup.tgm(keyword, record_PID) is not None:
-#                    output = uri_lookup.tgm(keyword, record_PID)      # testing for return values
-#                    print(output[0], output[1])                       # ditto
                     appending_subjects.append({'tgm': uri_lookup.tgm(keyword, record_PID)}) 
                     record_write = True
                     
                 # LCSH subject found
                 elif uri_lookup.lcsh(keyword, record_PID) is not None:
+#                    output = uri_lookup.lcsh(keyword, record_PID)      # testing for return values
+#                    print(output[0], output[1])                       # ditto
                     appending_subjects.append({'lcsh': uri_lookup.lcsh(keyword, record_PID)}) #need heading & type
-#                    record_write = True
+                    record_write = True
                 
                 # no subject found
                 else:

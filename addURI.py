@@ -171,10 +171,10 @@ for record in mods.load(sys.argv[1]):
             
                 # TGM subject found
                 if uri_lookup.tgm(keyword, record_PID) is not None:
-                    output = uri_lookup.tgm(keyword, record_PID)      # testing for return values
-                    print(output[0], output[1])                       # ditto
-#                    appending_subjects.append({'tgm': uri_lookup.tgm(keyword, record_PID)}) 
-#                    record_write = True
+#                    output = uri_lookup.tgm(keyword, record_PID)      # testing for return values
+#                    print(output[0], output[1])                       # ditto
+                    appending_subjects.append({'tgm': uri_lookup.tgm(keyword, record_PID)}) 
+                    record_write = True
                     
                 # LCSH subject found
                 elif uri_lookup.lcsh(keyword, record_PID) is not None:
@@ -202,8 +202,8 @@ for record in mods.load(sys.argv[1]):
         if 'improvedMODS' not in os.listdir():
             os.mkdir('improvedMODS')
         print("Writing", record_PID)
-        print(appending_subjects)
-#        write_record_subjects(record, appending_subjects, record_PID)
+#        print(appending_subjects) # testing line
+        write_record_subjects(record, appending_subjects, record_PID)
     
 # indicate errors were logged 
 if error_log is True:

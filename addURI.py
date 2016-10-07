@@ -9,6 +9,9 @@ import requests
 from lxml import etree
 from bs4 import BeautifulSoup
 
+sys.path.append('./assets')
+from pymods import mods
+
 nameSpace_default = {'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/', 
                      'dc': 'http://purl.org/dc/elements/1.1/', 
                      'mods': 'http://www.loc.gov/mods/v3', 
@@ -18,6 +21,9 @@ error_log = False
 
 def get_subject_parts(subject_html):
     subject_parts = {}
+    
+    ''' 
+    # LCSH complex
     subject_soup = BeautifulSoup(subject_html.text, 'lxml')
     for componentList in subject_soup.find_all("ul", rel="madsrdf:componentList"):
         for heading in componentList.find_all('div'):
@@ -26,6 +32,7 @@ def get_subject_parts(subject_html):
                 subject_parts['heading'] = heading.text.strip()
                 subject_parts['URI'] = suject_html.url[0:-5]
     return subject_parts
+    '''
 
 def write_record_subjects(record, subjects, PID):
     with open('improvedMODS/' + PID.replace(':','_') + '.xml', 'w') as MODS_out:
@@ -46,69 +53,13 @@ def write_record_subjects(record, subjects, PID):
 
 
 def get_keyword_list(record):
+    # generate keywords from note@displayLabel="Keywords" element
     keywords = []
     for note in mods.note(record):
         if 'Keywords' in note.keys():
             for keyword in note['Keywords'].split(','):
                 keywords.append(keyword.strip())
     return keywords
-
-
-class oai_dc:
-
-    def pid_search(record, nameSpace_dict=nameSpace_default):
-        pid = re.compile('fsu_[0-9]*')
-        for identifier in record.iterfind('.//{%s}identifier' % nameSpace_dict['oai_dc']):
-            match = pid.search(identifier.text)
-            if match:
-                return match.group().replace('_',':')
-                
-    def load(input_file, nameSpace_dict=nameSpace_default):
-        record_list = []
-        tree = etree.parse(input_file)
-        root = tree.getroot()
-        for record in root.iterfind('.//{%s}record' % nameSpace_dict['oai_dc']):
-            record_list.append(record)
-        return record_list                
-    
-    
-class mods:
-
-    def load(input_file, nameSpace_dict=nameSpace_default):
-        tree = etree.parse(input_file)
-        root = tree.getroot()
-        if len(root.findall('.//{%s}mods' % nameSpace_dict['mods'])) > 1:
-            record_list = []
-            for record in root.iterfind('.//{%s}mods' % nameSpace_dict['mods']):
-                record_list.append(record)
-            return record_list
-        else:
-            return root
-        
-    
-    def note(record, nameSpace_dict=nameSpace_default):
-        allNotes = []
-        for note in record.iterfind('./{%s}note' % nameSpace_dict['mods']):
-            if len(note.attrib) >= 1:
-                if 'type' in note.attrib.keys():
-                    typed_note = {note.attrib['type'] : note.text}
-                    allNotes.append(typed_note)
-                elif 'displayLabel' in note.attrib.keys():
-                    labeled_note = {note.attrib['displayLabel'] : note.text}
-                    allNotes.append(labeled_note)
-                else:
-                    allNotes.append(note.text)
-            else:
-                allANotes.append(note.text)
-        return allNotes
-
-    def pid_search(mods_record, nameSpace_dict=nameSpace_default):
-        pid = re.compile('fsu:[0-9]*')
-        for identifier in mods_record.iterfind('.//{%s}identifier' % nameSpace_dict['mods']):
-            match = pid.search(identifier.text)
-            if match:
-                return match.group()
-        
 
 
 class uri_lookup:
@@ -121,17 +72,21 @@ class uri_lookup:
         global error_log
         tgm_lookup = requests.get('http://id.loc.gov/vocabulary/graphicMaterials/label/{0}'.format(keyword.replace(' ','%20')),
                                    timeout=5)
+        # request successful                           
         if tgm_lookup.status_code == 200:
             LOC_try_index = 0
             return get_subject_parts(tgm_lookup)
+        # 404    
         elif tgm_lookup.status_code == 404:
             logging.warning('404 - resource not found ; [{0}]--{1}'.format(record_PID, 'tgm:' + keyword))
             error_log = True
             return None
+        # 503 (probably wait... but haven't caught one of these yet)    
         elif tgm_lookup.status_code == 503:
             logging.info('503 - {0} ; [{1}]--{2}'.format(tgm_lookup.headers, record_PID, 'tgm:' + keyword))
             error_log = True
             return None
+        # anything else
         else:
             logging.warning('Other status code - {0} ; [{1}]--{2}'.format(tgm_lookup.status_code, record_PID, 'tgm:' + keyword))
             error_log = True
@@ -145,56 +100,85 @@ class uri_lookup:
         global error_log
         lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword.replace(' ','%20')),
                                     timeout=5)
+        # request successful
         if lcsh_lookup.status_code == 200:
             LOC_try_index = 0
             return lcsh_lookup.url[0:-5]
+        # 404
         elif lcsh_lookup.status_code == 404:
             logging.warning('404 - resource not found ; [{0}]--{1}'.format(record_PID, 'lcsh:' + keyword))
             error_log = True
             return None
+        # 503 (probably wait... but haven't caught one of these yet)
         elif lcsh_lookup.status_code == 503:
             logging.info('503 - {0} ; [{1}]--{2}'.format(tgm_lookup.headers, record_PID, 'lcsh:' + keyword))
             error_log = True
             return None
+        # anything else
         else:
             logging.warning('Other status code - {0} ; [{1}]--{2}'.format(tgm_lookup.status_code, record_PID, 'lcsh:' + keyword))
             error_log = True
             return None
     '''
 
+# init error logger
 logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
                     level=logging.WARNING,
                     format='%(asctime)s -- %(levelname)s : %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S %p')
+
+# loop over MODS record list returned by pymods.mods.load                    
 for record in mods.load(sys.argv[1]):
-    record_write = True
+    record_write = False
+#    record_write = True      # testing value to force record writing
     appending_subjects = []
+
+    # check timeout index
     while LOC_try_index <= 5:
         record_PID = mods.pid_search(record)
         print("Checking:", record_PID)
-        for keyword in get_keyword_list(record):
+
+        # loops over keywords 
+        for keyword in get_keyword_list(record): 
+            print(keyword)
+        '''
             try:
+            
+                # TGM subject found
                 if uri_lookup.tgm(keyword, record_PID) is not None:
                     appending_subjects.append({'tgm': uri_lookup.tgm(keyword, record_PID)}) #need heading & type
                     record_write = True
+                    
+                # LCSH subject found
                 elif uri_lookup.lcsh(keyword, record_PID) is not None:
                     appending_subjects.append({'lcsh': uri_lookup.lcsh(keyword, record_PID)})
                     record_write = True
+                
+                # no subject found
                 else:
                     pass
+                    
+            # catch timeout exception and increase timeout index        
             except requests.exceptions.Timeout:
                 logging.warning("The request timed out after five seconds. {0}-{1}".format(record_PID, keyword))
                 LOC_try_index = LOC_try_index + 1
+        '''            
         break                
+    
+    # LOC has timed out
     else:
         print("\nid.loc.gov seems unavailable at this time. Try again later.\n")
         break
+        
+    # if any records have new subject values, write them    
     if record_write == True:
         if 'improvedMODS' not in os.listdir():
             os.mkdir('improvedMODS')
         print("Writing", record_PID)
         print(appending_subjects)
  #       write_record_subjects(record, appending_subjects, record_PID)
+
+# indicate errors were logged 
 if error_log is True:
     print("\nSome keywords not found.\nDetails logged to: addURI_LOG{0}.txt\n".format(datetime.date.today()))
 

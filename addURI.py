@@ -19,9 +19,22 @@ nameSpace_default = {'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/',
 LOC_try_index = 0                     
 error_log = False
 
-def get_subject_parts(subject_html):
+class get_subject_parts:
     subject_parts = {}
     
+    # TGM simple
+    def tgm_simple(subject_LOC_reply): 
+        subject_html = subject_LOC_reply.text
+        subject_uri = subject_LOC_reply.url[0:-5]
+        subject_soup = BeautifulSoup(subject_html, 'lxml')
+        for authority_div in subject_soup.find_all('div', about=subject_uri):
+            if authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel") is not None:
+                subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
+            elif authority_div.find('a', property="madsrdf:authoritativeLabel skos:prefLabel") is not None:
+                subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
+        return subject_uri, subject_heading
+            
+        
     ''' 
     # LCSH complex
     subject_soup = BeautifulSoup(subject_html.text, 'lxml')
@@ -75,7 +88,7 @@ class uri_lookup:
         # request successful                           
         if tgm_lookup.status_code == 200:
             LOC_try_index = 0
-            return get_subject_parts(tgm_lookup)
+            return get_subject_parts.tgm_simple(tgm_lookup)
         # 404    
         elif tgm_lookup.status_code == 404:
             logging.warning('404 - resource not found ; [{0}]--{1}'.format(record_PID, 'tgm:' + keyword))
@@ -140,19 +153,18 @@ for record in mods.load(sys.argv[1]):
 
         # loops over keywords 
         for keyword in get_keyword_list(record): 
-            print(keyword)
-        '''
+
             try:
             
                 # TGM subject found
                 if uri_lookup.tgm(keyword, record_PID) is not None:
-                    appending_subjects.append({'tgm': uri_lookup.tgm(keyword, record_PID)}) #need heading & type
-                    record_write = True
+                    appending_subjects.append({'tgm': uri_lookup.tgm(keyword, record_PID)}) 
+#                    record_write = True
                     
                 # LCSH subject found
                 elif uri_lookup.lcsh(keyword, record_PID) is not None:
-                    appending_subjects.append({'lcsh': uri_lookup.lcsh(keyword, record_PID)})
-                    record_write = True
+                    appending_subjects.append({'lcsh': uri_lookup.lcsh(keyword, record_PID)}) #need heading & type
+#                    record_write = True
                 
                 # no subject found
                 else:
@@ -162,10 +174,10 @@ for record in mods.load(sys.argv[1]):
             except requests.exceptions.Timeout:
                 logging.warning("The request timed out after five seconds. {0}-{1}".format(record_PID, keyword))
                 LOC_try_index = LOC_try_index + 1
-        '''            
+                    
         break                
     
-    # LOC has timed out
+    # LOC has timed out multiple times
     else:
         print("\nid.loc.gov seems unavailable at this time. Try again later.\n")
         break
@@ -176,8 +188,8 @@ for record in mods.load(sys.argv[1]):
             os.mkdir('improvedMODS')
         print("Writing", record_PID)
         print(appending_subjects)
- #       write_record_subjects(record, appending_subjects, record_PID)
-
+#        write_record_subjects(record, appending_subjects, record_PID)
+    
 # indicate errors were logged 
 if error_log is True:
     print("\nSome keywords not found.\nDetails logged to: addURI_LOG{0}.txt\n".format(datetime.date.today()))

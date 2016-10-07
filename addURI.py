@@ -32,6 +32,11 @@ class get_subject_parts:
                 subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
             elif authority_div.find('a', property="madsrdf:authoritativeLabel skos:prefLabel") is not None:
                 subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
+            elif authority_div.find('span', property="madsrdf:variantLabel skosxl:literalForm"):
+                use_instead = authority_div.find('h3', text="Use Instead")        
+                varient_URI = use_instead.find_next('a').text                          
+                subject_heading = get_subject_parts.tgm_simple(requests.get(varient_URI, timeout=5))[1]
+                subject_uri = varient_URI   
         return subject_uri, subject_heading
             
         
@@ -49,19 +54,27 @@ class get_subject_parts:
 
 def write_record_subjects(record, subjects, PID):
     with open('improvedMODS/' + PID.replace(':','_') + '.xml', 'w') as MODS_out:
+        
+        # loop over incoming subjects
         for appending_subject in subjects:
+            
+            # build tgm subjects
             if 'tgm' in appending_subject.keys():
                 subject = etree.Element('{%s}subject' % nameSpace_default['mods'],
                                         authority='tgm', 
-                                        authorityURI='http://id.loc.gov/vocabulary/graphicMaterials')
+                                        authorityURI=appending_subject['tgm'][0])
                 topic = etree.SubElement(subject, '{%s}topic' % nameSpace_default['mods'])
-                topic.text = appending_subject['tgm']['heading']
+                topic.text = appending_subject['tgm'][1]
+            
+            # build lcsh subjects
             elif 'lcsh' in appending_subject.keys():
                 subject = etree.Element('{%s}subject' % nameSpace_default['mods'],
                                         authority='lcsh', 
                                         authorityURI='http://id.loc.gov/authorities/subjects')
                 subject.text = appending_subject['lcsh']
             record.append(subject)
+
+        # write new records    
         MODS_out.write(etree.tostring(record, pretty_print=True, xml_declaration=True, encoding="UTF-8").decode('utf-8'))
 
 
@@ -153,12 +166,14 @@ for record in mods.load(sys.argv[1]):
 
         # loops over keywords 
         for keyword in get_keyword_list(record): 
-
+            print(keyword) # trouble-shooting mark
             try:
             
                 # TGM subject found
                 if uri_lookup.tgm(keyword, record_PID) is not None:
-                    appending_subjects.append({'tgm': uri_lookup.tgm(keyword, record_PID)}) 
+                    output = uri_lookup.tgm(keyword, record_PID)      # testing for return values
+                    print(output[0], output[1])                       # ditto
+#                    appending_subjects.append({'tgm': uri_lookup.tgm(keyword, record_PID)}) 
 #                    record_write = True
                     
                 # LCSH subject found

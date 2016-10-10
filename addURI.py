@@ -101,9 +101,10 @@ def get_keyword_list(record):
     # generate keywords from note@displayLabel="Keywords" element
     keywords = []
     for note in mods.note(record):
-        if 'Keywords' in note.keys():
-            for keyword in note['Keywords'].split(','):
-                keywords.append(keyword.strip()) # going to have to deal with en & em dashes
+        if isinstance(note, dict):
+            if 'Keywords' in note.keys():
+                for keyword in note['Keywords'].split(','):
+                    keywords.append(keyword.strip()) # going to have to deal with en & em dashes
     return keywords
 
 

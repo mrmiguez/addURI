@@ -139,7 +139,7 @@ class mods:
                 else:
                     allNotes.append(note.text)
             else:
-                allANotes.append(note.text)
+                allNotes.append(note.text)
         return allNotes
 
 

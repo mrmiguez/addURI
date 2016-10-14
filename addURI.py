@@ -9,7 +9,7 @@ import requests
 from lxml import etree
 from bs4 import BeautifulSoup
 
-sys.path.append('./assets')
+sys.path.append('assets/')
 from pymods import mods
 
 nameSpace_default = {'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/', 
@@ -220,7 +220,7 @@ for record in mods.load(sys.argv[1]):
     if record_write == True:
         if 'improvedMODS' not in os.listdir():
             os.mkdir('improvedMODS')
-        print("Writing", record_PID)
+        print("Writing: ", record_PID)
 #        print(appending_subjects) # testing line
         write_record_subjects(record, appending_subjects, record_PID)
     

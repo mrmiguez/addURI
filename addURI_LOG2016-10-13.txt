@@ -1,0 +1,43 @@
+10/13/2016 11:25:09 AM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:Greek Life
+10/13/2016 11:25:10 AM -- WARNING : 404 - resource not found ; [fsu:209910]--lcsh:Greek Life
+10/13/2016 11:25:11 AM -- WARNING : 404 - resource not found ; [fsu:209910]--tgm:sorority life
+10/13/2016 11:25:11 AM -- WARNING : 404 - resource not found ; [fsu:209910]--lcsh:sorority life
+10/13/2016 11:25:12 AM -- WARNING : 404 - resource not found ; [fsu:209908]--tgm:bioethics
+10/13/2016 11:25:13 AM -- WARNING : 404 - resource not found ; [fsu:209908]--tgm:cognitive enhancement
+10/13/2016 11:25:13 AM -- WARNING : 404 - resource not found ; [fsu:209908]--lcsh:cognitive enhancement
+10/13/2016 11:25:13 AM -- WARNING : 404 - resource not found ; [fsu:209908]--tgm:cognitive enhancers
+10/13/2016 11:25:14 AM -- WARNING : 404 - resource not found ; [fsu:209904]--tgm:Birth
+10/13/2016 11:25:15 AM -- WARNING : 404 - resource not found ; [fsu:209904]--tgm:C-Section
+10/13/2016 11:25:15 AM -- WARNING : 404 - resource not found ; [fsu:209904]--lcsh:C-Section
+10/13/2016 11:25:15 AM -- WARNING : 404 - resource not found ; [fsu:209904]--tgm:VBAC
+10/13/2016 11:25:15 AM -- WARNING : 404 - resource not found ; [fsu:209904]--lcsh:VBAC
+10/13/2016 11:25:15 AM -- WARNING : 404 - resource not found ; [fsu:209904]--tgm:Obstetrics
+10/13/2016 11:25:16 AM -- WARNING : 404 - resource not found ; [fsu:209911]--tgm:vegan
+10/13/2016 11:25:16 AM -- WARNING : 404 - resource not found ; [fsu:209911]--lcsh:vegan
+10/13/2016 11:25:16 AM -- WARNING : 404 - resource not found ; [fsu:209911]--tgm:vegetarian
+10/13/2016 11:25:16 AM -- WARNING : 404 - resource not found ; [fsu:209911]--lcsh:vegetarian
+10/13/2016 11:25:17 AM -- WARNING : 404 - resource not found ; [fsu:209911]--tgm:animal rights
+10/13/2016 11:25:19 AM -- WARNING : 404 - resource not found ; [fsu:209911]--tgm:environment
+10/13/2016 11:25:25 AM -- WARNING : The request timed out after five seconds. fsu:209911-environment
+10/13/2016 11:25:34 AM -- WARNING : 404 - resource not found ; [fsu:209911]--tgm:accessibility
+10/13/2016 11:25:35 AM -- WARNING : 404 - resource not found ; [fsu:209911]--lcsh:accessibility
+10/13/2016 11:25:35 AM -- WARNING : 404 - resource not found ; [fsu:209906]--tgm:euthanasia
+10/13/2016 11:25:41 AM -- WARNING : The request timed out after five seconds. fsu:209906-euthanasia
+10/13/2016 11:25:41 AM -- WARNING : 404 - resource not found ; [fsu:209906]--tgm:physician-assisted suicide
+10/13/2016 11:25:47 AM -- WARNING : The request timed out after five seconds. fsu:209906-physician-assisted suicide
+10/13/2016 11:25:49 AM -- WARNING : 404 - resource not found ; [fsu:209906]--tgm:ethic
+10/13/2016 11:25:51 AM -- WARNING : 404 - resource not found ; [fsu:209906]--lcsh:ethic
+10/13/2016 11:25:51 AM -- WARNING : 404 - resource not found ; [fsu:209906]--tgm:bioethics
+10/13/2016 11:25:52 AM -- WARNING : 404 - resource not found ; [fsu:209913]--tgm:categorical imperative
+10/13/2016 11:25:52 AM -- WARNING : 404 - resource not found ; [fsu:209913]--lcsh:categorical imperative
+10/13/2016 11:25:52 AM -- WARNING : 404 - resource not found ; [fsu:209913]--tgm:Greek Life
+10/13/2016 11:25:52 AM -- WARNING : 404 - resource not found ; [fsu:209913]--lcsh:Greek Life
+10/13/2016 11:25:53 AM -- WARNING : 404 - resource not found ; [fsu:209913]--tgm:drug use
+10/13/2016 11:25:57 AM -- WARNING : 404 - resource not found ; [fsu:209913]--tgm:Kant
+10/13/2016 11:25:58 AM -- WARNING : 404 - resource not found ; [fsu:209913]--lcsh:Kant
+10/13/2016 11:25:58 AM -- WARNING : 404 - resource not found ; [fsu:209913]--tgm:collegiate society
+10/13/2016 11:25:58 AM -- WARNING : 404 - resource not found ; [fsu:209913]--lcsh:collegiate society
+10/13/2016 11:25:59 AM -- WARNING : 404 - resource not found ; [fsu:209915]--tgm:conscientious objection
+10/13/2016 11:26:05 AM -- WARNING : The request timed out after five seconds. fsu:209915-conscientious objection
+10/13/2016 11:26:07 AM -- WARNING : 404 - resource not found ; [fsu:209915]--tgm:abortion
+10/13/2016 11:26:12 AM -- WARNING : The request timed out after five seconds. fsu:209915-abortion

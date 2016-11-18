@@ -28,15 +28,22 @@ class get_subject_parts:
         subject_uri = subject_LOC_reply.url[0:-5]
         subject_soup = BeautifulSoup(subject_html, 'lxml')
         for authority_div in subject_soup.find_all('div', about=subject_uri):
+            
+            # look for RDFa in anchor elements
             if authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel") is not None:
                 subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
+            
+            # look for RDFa in span elements
             elif authority_div.find('a', property="madsrdf:authoritativeLabel skos:prefLabel") is not None:
-                subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
+                subject_heading = authority_div.find('a', property="madsrdf:authoritativeLabel skos:prefLabel").text
+            # check for "Use Instead" url
+
             elif authority_div.find('span', property="madsrdf:variantLabel skosxl:literalForm"):
                 use_instead = authority_div.find('h3', text="Use Instead")        
                 variant_URI = use_instead.find_next('a').text                          
+                # try again with "Use Instead" url
                 subject_heading = get_subject_parts.tgm_simple(requests.get(variant_URI, timeout=5))[1]
-                subject_uri = variant_URI   
+                subject_uri = variant_URI             
         return subject_uri, subject_heading
             
         
@@ -45,15 +52,23 @@ class get_subject_parts:
         subject_uri = subject_LOC_reply.url[0:-5]
         subject_soup = BeautifulSoup(subject_html, 'lxml')
         for authority_div in subject_soup.find_all('div', about=subject_uri):
+
+            # look for RDFa in anchor elements
             if authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel") is not None:
                 subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
+            
+            # look for RDFa in span elements
             elif authority_div.find('a', property="madsrdf:authoritativeLabel skos:prefLabel") is not None:
-                subject_heading = authority_div.find('span', property="madsrdf:authoritativeLabel skos:prefLabel").text
+                subject_heading = authority_div.find('a', property="madsrdf:authoritativeLabel skos:prefLabel").text
+                
+            # chech for "Use Instead" url
             elif authority_div.find('span', property="madsrdf:variantLabel skosxl:literalForm"):
                 use_instead = authority_div.find('h3', text="Use Instead")        
                 variant_URI = use_instead.find_next('a').text                          
+                # try again with "Use Instead" url
                 subject_heading = get_subject_parts.tgm_simple(requests.get(variant_URI, timeout=5))[1]
-                subject_uri = variant_URI   
+                subject_uri = variant_URI                
+            
         return subject_uri, subject_heading       
     
     ''' 
@@ -185,7 +200,7 @@ for record in mods.load(sys.argv[1]):
 
         # loops over keywords 
         for keyword in get_keyword_list(record): 
-
+#            print(keyword) # debugging
             try:
             
                 # TGM subject found

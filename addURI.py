@@ -10,6 +10,7 @@ from lxml import etree
 from bs4 import BeautifulSoup
 
 sys.path.append('assets/')
+import clean_up
 from pymods import mods
 
 nameSpace_default = {'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/', 
@@ -127,7 +128,6 @@ class uri_lookup:
 
     #TGM
     def tgm(keyword, record_PID):
-#        pass
     
         global LOC_try_index
         global error_log
@@ -155,8 +155,7 @@ class uri_lookup:
     
    #LCSH
     def lcsh(keyword, record_PID):
-#        pass
-        
+
         global LOC_try_index
         global error_log
         lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword.replace(' ','%20')),
@@ -200,7 +199,7 @@ for record in mods.load(sys.argv[1]):
 
         # loops over keywords 
         for keyword in get_keyword_list(record): 
-#            print(keyword) # debugging
+
             try:
             
                 # TGM subject found
@@ -210,8 +209,6 @@ for record in mods.load(sys.argv[1]):
                     
                 # LCSH subject found
                 elif uri_lookup.lcsh(keyword, record_PID) is not None:
-#                    output = uri_lookup.lcsh(keyword, record_PID)      # testing for return values
-#                    print(output[0], output[1])                       # ditto
                     appending_subjects.append({'lcsh': uri_lookup.lcsh(keyword, record_PID)}) #need heading & type
                     record_write = True
                 
@@ -236,10 +233,11 @@ for record in mods.load(sys.argv[1]):
         if 'improvedMODS' not in os.listdir():
             os.mkdir('improvedMODS')
         print("Writing: ", record_PID)
-#        print(appending_subjects) # testing line
         write_record_subjects(record, appending_subjects, record_PID)
     
+# clean up namespace prefixes for diginole
+clean_up.clean('improvedMODS/')
+
 # indicate errors were logged 
 if error_log is True:
     print("\nSome keywords not found.\nDetails logged to: addURI_LOG{0}.txt\n".format(datetime.date.today()))
-

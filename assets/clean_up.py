@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import os
 import sys
 
@@ -10,5 +9,3 @@ def clean(in_directory):
                     out_file.write(line)
                 else:
                     out_file.write(line.replace('mods:',''))
-
-clean(sys.argv[1])                

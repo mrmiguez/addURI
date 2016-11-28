@@ -11,7 +11,7 @@ sys.path.append('addURI/assets/')
 
 import clean_up
 import lc_vocab
-from pymods import mods
+from pymods import mods, fsudl
 
 
 LOC_try_index = 0                     
@@ -20,20 +20,19 @@ error_log = False
 def get_keyword_list(record):
     # generate keywords from note@displayLabel="Keywords" element
     keywords = []
-    for note in mods.note(record):
-        if isinstance(note, dict):
-            if 'Keywords' in note.keys():
-                for keyword in note['Keywords'].split(','):
-                    keywords.append(keyword.strip()) # going to have to deal with en & em dashes
+    for subject_elems in mods.subject_generator(record):
+        for subject_elem in subject_elems:
+            for term in subject_elem.values():
+                keywords.append(term) # going to have to deal with en & em dashes
     return keywords
 
-
+'''
 # init error logger
 logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
                     level=logging.WARNING,
                     format='%(asctime)s -- %(levelname)s : %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S %p')
-
+'''
 # loop over MODS record list returned by pymods.mods.load                    
 for record in mods.load(sys.argv[1]):
     record_write = False
@@ -41,13 +40,13 @@ for record in mods.load(sys.argv[1]):
 
     # check timeout index
     while LOC_try_index <= 5:
-        record_PID = mods.pid_search(record)
+        record_PID = fsudl.local_identifier(record)
         print("Checking:", record_PID)
 
         # loops over keywords 
         for keyword in get_keyword_list(record): 
             print(keyword)
-
+            '''
             try:
             
                 # TGM subject found
@@ -68,14 +67,14 @@ for record in mods.load(sys.argv[1]):
             except requests.exceptions.Timeout:
                 logging.warning("The request timed out after five seconds. {0}-{1}".format(record_PID, keyword))
                 LOC_try_index = LOC_try_index + 1
-                    
+            '''        
         break                
-        
+                    
     # LOC has timed out multiple times
     else:
         print("\nid.loc.gov seems unavailable at this time. Try again later.\n")
         break
-
+'''
     # if any records have new subject values, write them    
     if record_write == True:
         if 'improvedMODS' not in os.listdir():
@@ -89,3 +88,4 @@ clean_up.clean('improvedMODS/')
 # indicate errors were logged 
 if error_log is True:
     print("\nSome keywords not found.\nDetails logged to: addURI_LOG{0}.txt\n".format(datetime.date.today()))
+'''

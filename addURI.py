@@ -57,7 +57,7 @@ for record in mods.load(sys.argv[1]):
                     
                 # LCSH subject found
                 elif lc_vocab.uri_lookup.lcsh(keyword, record_PID) is not None:
-                    appending_subjects.append({'lcsh': lc_vocab.uri_lookup.lcsh(keyword, record_PID)}) #need heading & type
+                    appending_subjects.append({'lcsh_simple': lc_vocab.uri_lookup.lcsh(keyword, record_PID)}) #need heading & type
                     record_write = True
                 
                 # no subject found

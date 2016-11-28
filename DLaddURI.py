@@ -6,6 +6,7 @@ import sys
 import logging
 import datetime
 import requests
+from lxml import etree
 
 sys.path.append('addURI/assets/')
 
@@ -17,22 +18,24 @@ from pymods import mods, fsudl
 LOC_try_index = 0                     
 error_log = False
 
-def get_keyword_list(record):
-    # generate keywords from note@displayLabel="Keywords" element
-    keywords = []
-    for subject_elems in mods.subject_generator(record):
-        for subject_elem in subject_elems:
-            for term in subject_elem.values():
-                keywords.append(term) # going to have to deal with en & em dashes
-    return keywords
+def get_subject_list(record):
+    # get lcsh terms
+    subject_list = []
+    for subject in record.iterfind('.//{http://www.loc.gov/mods/v3}subject'):
+        if 'authority' in subject.attrib.keys():
+            if 'lcsh' == subject.attrib['authority']:
+                for child in subject.iterchildren():
+                    subject_list.append(child.text.replace(u'\u2014', '--').replace(u'\u2013', '--'))
+                record.remove(subject)
+    return subject_list
 
-'''
+
 # init error logger
 logging.basicConfig(filename='addURI_LOG{0}.txt'.format(datetime.date.today()),
                     level=logging.WARNING,
                     format='%(asctime)s -- %(levelname)s : %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S %p')
-'''
+
 # loop over MODS record list returned by pymods.mods.load                    
 for record in mods.load(sys.argv[1]):
     record_write = False
@@ -44,37 +47,53 @@ for record in mods.load(sys.argv[1]):
         print("Checking:", record_PID)
 
         # loops over keywords 
-        for keyword in get_keyword_list(record): 
-            print(keyword)
-            '''
-            try:
+        for subject in get_subject_list(record): 
+#            print(subject)
             
-                # TGM subject found
-                if lc_vocab.uri_lookup.tgm(keyword, record_PID) is not None:
-                    appending_subjects.append({'tgm': lc_vocab.uri_lookup.tgm(keyword, record_PID)}) 
-                    record_write = True
-                    
-                # LCSH subject found
-                elif lc_vocab.uri_lookup.lcsh(keyword, record_PID) is not None:
-                    appending_subjects.append({'lcsh': lc_vocab.uri_lookup.lcsh(keyword, record_PID)}) #need heading & type
-                    record_write = True
+            if '--' not in subject:
+                pass
                 
-                # no subject found
-                else:
-                    pass
+                try:
+                        
+                    # LCSH simple
+                    if lc_vocab.uri_lookup.lcsh(subject, record_PID) is not None:
+                        appending_subjects.append({'lcsh_simple': lc_vocab.uri_lookup.lcsh(subject, record_PID)}) #need heading & type
+                        record_write = True
                     
-            # catch timeout exception and increase timeout index        
-            except requests.exceptions.Timeout:
-                logging.warning("The request timed out after five seconds. {0}-{1}".format(record_PID, keyword))
-                LOC_try_index = LOC_try_index + 1
-            '''        
+                    # no subject found
+                    else:
+                        pass
+            
+                # catch timeout exception and increase timeout index
+                except requests.exceptions.Timeout:
+                    logging.warning("The request timed out after five seconds. {0}-{1}".format(record_PID, subject))
+                    LOC_try_index = LOC_try_index + 1
+                
+            elif '--' in subject:
+            
+                try: 
+                    
+                    # LCSH complex
+                    if lc_vocab.uri_lookup.lcsh_complex(subject, record_PID) is not None:
+                        appending_subjects.append({'lcsh_complex': lc_vocab.uri_lookup.lcsh_complex(subject, record_PID)}) #need heading & type
+                        record_write = True
+                    
+                    # no subject found
+                    else:
+                        pass
+                
+                # catch timeout exception and increase timeout index
+                except requests.exceptions.Timeout:
+                    logging.warning("The request timed out after five seconds. {0}-{1}".format(record_PID, subject))
+                    LOC_try_index = LOC_try_index + 1
+
         break                
                     
     # LOC has timed out multiple times
     else:
         print("\nid.loc.gov seems unavailable at this time. Try again later.\n")
         break
-'''
+
     # if any records have new subject values, write them    
     if record_write == True:
         if 'improvedMODS' not in os.listdir():
@@ -88,4 +107,3 @@ clean_up.clean('improvedMODS/')
 # indicate errors were logged 
 if error_log is True:
     print("\nSome keywords not found.\nDetails logged to: addURI_LOG{0}.txt\n".format(datetime.date.today()))
-'''

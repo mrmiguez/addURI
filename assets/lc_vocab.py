@@ -36,7 +36,7 @@ class lc_subject:
                 subject_uri = variant_URI             
         return subject_uri, subject_heading
             
-        
+    # LCSH simple    
     def lcsh_simple(subject_LOC_reply):
         subject_html = subject_LOC_reply.text
         subject_uri = subject_LOC_reply.url[0:-5]
@@ -51,7 +51,7 @@ class lc_subject:
             elif authority_div.find('a', property="madsrdf:authoritativeLabel skos:prefLabel") is not None:
                 subject_heading = authority_div.find('a', property="madsrdf:authoritativeLabel skos:prefLabel").text
                 
-            # chech for "Use Instead" url
+            # check for "Use Instead" url
             elif authority_div.find('span', property="madsrdf:variantLabel skosxl:literalForm"):
                 use_instead = authority_div.find('h3', text="Use Instead")        
                 variant_URI = use_instead.find_next('a').text                          
@@ -61,17 +61,22 @@ class lc_subject:
             
         return subject_uri, subject_heading       
     
-    ''' 
     # LCSH complex
-    subject_soup = BeautifulSoup(subject_html.text, 'lxml')
-    for componentList in subject_soup.find_all("ul", rel="madsrdf:componentList"):
-        for heading in componentList.find_all('div'):
-            if 'madsrdf:Authority' in heading.get('typeof'):
-                subject_parts['part'] = heading['typeof'].split(' ')[2].split(':')[1]
-                subject_parts['heading'] = heading.text.strip()
-                subject_parts['URI'] = suject_html.url[0:-5]
-    return subject_parts
-    '''
+    def lcsh_complex(subject_LOC_reply):
+        subject_parts = {}
+        subject_parts['URI'] = subject_LOC_reply.url[0:-5]
+        
+        # indiviual subject elements are return as a list of dicts:
+        # heading : term
+        subject_parts['parts'] = []
+        subject_soup = BeautifulSoup(subject_LOC_reply.text, 'lxml')
+        for componentList in subject_soup.find_all("ul", rel="madsrdf:componentList"):
+            for heading in componentList.find_all('div'):
+                if 'madsrdf:Authority' in heading.get('typeof'):
+                    subject_parts['parts'].append( { heading['typeof'].split(' ')[2].split(':')[1].lower() : 
+                    heading.text.strip() } )
+        return subject_parts
+
 
 def write_record_subjects(record, subjects, PID):
     with open('improvedMODS/' + PID.replace(':','_') + '.xml', 'w') as MODS_out:
@@ -88,14 +93,29 @@ def write_record_subjects(record, subjects, PID):
                 topic = etree.SubElement(subject, '{%s}topic' % nameSpace_default['mods'])
                 topic.text = appending_subject['tgm'][1]
             
-            # build lcsh subjects
-            elif 'lcsh' in appending_subject.keys():
+            # build lcsh simple
+            elif 'lcsh_simple' in appending_subject.keys():
                 subject = etree.Element('{%s}subject' % nameSpace_default['mods'],
                                         authority='lcsh', 
-                                        authorityURI=appending_subject['lcsh'][0][0:38],
-                                        valueURI=appending_subject['lcsh'][0])
+                                        authorityURI=appending_subject['lcsh_simple'][0][0:38],
+                                        valueURI=appending_subject['lcsh_simple'][0])
                 topic = etree.SubElement(subject, '{%s}topic' % nameSpace_default['mods'])
-                topic.text = appending_subject['lcsh'][1]
+                topic.text = appending_subject['lcsh_simple'][1]
+            
+            
+            # build lcsh complex
+            elif 'lcsh_complex' in appending_subject.keys():
+                subject = etree.Element('{%s}subject' % nameSpace_default['mods'],
+                                        authority='lcsh',
+                                        authorityURI=appending_subject['lcsh_complex']['URI'][0:38],
+                                        valueURI=appending_subject['lcsh_complex']['URI'])
+                for part in appending_subject['lcsh_complex']['parts']:
+#                    print(part)
+                
+                    for type, term in part.items():
+                        child = etree.SubElement(subject, '{%s}%s' % ( nameSpace_default['mods'], type ),)
+                        child.text = term
+                
             record.append(subject)
 
         # write new records    
@@ -130,7 +150,7 @@ class uri_lookup:
             error_log = True
             return None
     
-   #LCSH
+    #LCSH simple
     def lcsh(keyword, record_PID):
 
         global LOC_try_index
@@ -141,6 +161,33 @@ class uri_lookup:
         if lcsh_lookup.status_code == 200:
             LOC_try_index = 0
             return lc_subject.lcsh_simple(lcsh_lookup)
+        # 404
+        elif lcsh_lookup.status_code == 404:
+            logging.warning('404 - resource not found ; [{0}]--{1}'.format(record_PID, 'lcsh:' + keyword))
+            error_log = True
+            return None
+        # 503 (probably wait... but haven't caught one of these yet)
+        elif lcsh_lookup.status_code == 503:
+            logging.info('503 - {0} ; [{1}]--{2}'.format(tgm_lookup.headers, record_PID, 'lcsh:' + keyword))
+            error_log = True
+            return None
+        # anything else
+        else:
+            logging.warning('Other status code - {0} ; [{1}]--{2}'.format(tgm_lookup.status_code, record_PID, 'lcsh:' + keyword))
+            error_log = True
+            return None
+            
+    #LCSH complex
+    def lcsh_complex(keyword, record_PID):
+
+        global LOC_try_index
+        global error_log
+        lcsh_lookup = requests.get('http://id.loc.gov/authorities/subjects/label/{0}'.format(keyword.replace(' ','%20')),
+                                    timeout=5)
+        # request successful
+        if lcsh_lookup.status_code == 200:
+            LOC_try_index = 0
+            return lc_subject.lcsh_complex(lcsh_lookup)
         # 404
         elif lcsh_lookup.status_code == 404:
             logging.warning('404 - resource not found ; [{0}]--{1}'.format(record_PID, 'lcsh:' + keyword))

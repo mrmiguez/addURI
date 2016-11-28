@@ -26,6 +26,7 @@ def get_subject_list(record):
             if 'lcsh' == subject.attrib['authority']:
                 for child in subject.iterchildren():
                     subject_list.append(child.text.replace(u'\u2014', '--').replace(u'\u2013', '--'))
+                # remove subjects that will be checked & re-added
                 record.remove(subject)
     return subject_list
 
@@ -48,10 +49,8 @@ for record in mods.load(sys.argv[1]):
 
         # loops over keywords 
         for subject in get_subject_list(record): 
-#            print(subject)
             
             if '--' not in subject:
-                pass
                 
                 try:
                         
